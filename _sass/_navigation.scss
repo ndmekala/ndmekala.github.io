@@ -1,0 +1,14 @@
+.navigation {
+    text-align: right;
+    padding: 1.5rem 0;
+    a, a:visited {
+        text-transform: uppercase;
+        letter-spacing: .125em;
+        font-size: $font-sm;
+        color: $blue;
+
+        &:not(last-child) {
+            margin-right: 1.5em;
+        }
+    }
+}

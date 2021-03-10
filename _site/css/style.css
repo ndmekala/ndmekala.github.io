@@ -1,0 +1,32 @@
+@import url("https://rsms.me/inter/inter.css");
+html { font-family: 'Inter', sans-serif; }
+
+@supports (font-variation-settings: normal) { html { font-family: 'Inter var', sans-serif; } }
+
+html { font-size: 100%; box-sizing: border-box; }
+
+*, *::before, *::after { box-sizing: inherit; }
+
+body { margin: 0; padding: 0; background-color: #fcfcfc; }
+
+h1 { color: #387557; font-weight: 900; font-size: 8rem; }
+
+h2 { color: #d9d908; text-transform: uppercase; letter-spacing: 0.1875rem; font-weight: 300; font-size: 1.0625rem; }
+
+p { color: #787878; }
+
+a, a:visited, a:hover { text-decoration: none; }
+
+.container { padding: 2rem; }
+
+.navigation { text-align: right; padding: 1.5rem 0; }
+
+.navigation a, .navigation a:visited { text-transform: uppercase; letter-spacing: .125em; font-size: 0.8125rem; color: #334bd1; }
+
+.navigation a:not(last-child), .navigation a:visited:not(last-child) { margin-right: 1.5em; }
+
+.hero { display: flex; flex-wrap: wrap; justify-content: center; }
+
+.hero__photo { background-image: url("/assets/IMG_4950.JPG"); height: 31.25rem; width: 31.25rem; background-repeat: no-repeat; background-position: 110% 50%; background-size: 100%; border-radius: 15.625rem; }
+
+/*# sourceMappingURL=style.css.map */

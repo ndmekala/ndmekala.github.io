@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"style.scss",
+		"_sass/_variables.scss",
+		"_sass/_globals.scss",
+		"_sass/_navigation.scss",
+		"_sass/_hero.scss"
+	],
+	"sourcesContent": [
+		"@import 'variables';\n\n@import 'globals';\n@import 'navigation';\n@import 'hero';",
+		"// colors\n$evergreen: hsl(150, 35%, 34%);\n$blue: hsl(231, 63%, 51%);\n$gold: hsl(60, 93%, 44%);\n$lightGray: hsl(0, 0%, 99%);\n$mediumGray: hsl(0, 0%, 47%);\n\n\n// font sizes\n$font-sm: 0.8125rem;\n$font-md: 1.0625rem;",
+		"@import url('https://rsms.me/inter/inter.css');\nhtml { font-family: 'Inter', sans-serif; }\n@supports (font-variation-settings: normal) {\n  html { font-family: 'Inter var', sans-serif; }\n}\n\nhtml {\n    font-size: 100%;\n    box-sizing: border-box;\n}\n\n\n*, *::before, *::after {\n    box-sizing: inherit;\n}\n\nbody {\n    margin: 0;\n    padding: 0;\n    background-color: $lightGray;\n}\n\nh1 {\n    color: $evergreen;\n    font-weight: 900;\n    font-size: 8rem;\n}\n\nh2 {\n    color: $gold;\n    text-transform: uppercase;\n    letter-spacing: 0.1875rem;\n    font-weight: 300;\n    font-size: $font-md;\n}\n\np {\n    color: $mediumGray;\n}\n\na, a:visited, a:hover {\n    text-decoration: none;\n}\n\n.container {\n    padding: 2rem;\n}",
+		".navigation {\n    text-align: right;\n    padding: 1.5rem 0;\n    a, a:visited {\n        text-transform: uppercase;\n        letter-spacing: .125em;\n        font-size: $font-sm;\n        color: $blue;\n\n        &:not(last-child) {\n            margin-right: 1.5em;\n        }\n    }\n}",
+		".hero {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n\n\n\n    &__photo {\n        background-image: url('/assets/IMG_4950.JPG');\n        height: 31.25rem;\n        width: 31.25rem;\n        background-repeat: no-repeat;\n        background-position: 110% 50%;\n        background-size: 100%;\n        border-radius: 15.625rem;\n    };\n\n    &__blurb {\n\n    };\n}"
+	],
+	"names": [],
+	"mappings": "AEAA,OAAO,CAAC,sCAAI;AACZ,AAAA,IAAI,CAAC,EAAE,WAAW,EAAE,mBAAmB,GAAI;;AACA,SAAC,EAAjC,uBAAuB,EAAE,MAAM,IACxC,AAAA,IAAI,CAAC,EAAE,WAAW,EAAE,uBAAuB,GAAI;;AAGjD,AAAA,IAAI,CAAC,EACD,SAAS,EAAE,IAAI,EACf,UAAU,EAAE,UAAU,GACzB;;AAGD,AAAA,CAAC,EAAE,CAAC,EAAE,MAAM,EAAE,CAAC,EAAE,KAAK,CAAC,EACnB,UAAU,EAAE,OAAO,GACtB;;AAED,AAAA,IAAI,CAAC,EACD,MAAM,EAAE,CAAC,EACT,OAAO,EAAE,CAAC,EACV,gBAAgB,EDfR,OAAe,GCgB1B;;AAED,AAAA,EAAE,CAAC,EACC,KAAK,EDtBG,OAAkB,ECuB1B,WAAW,EAAE,GAAG,EAChB,SAAS,EAAE,IAAI,GAClB;;AAED,AAAA,EAAE,CAAC,EACC,KAAK,ED1BF,OAAiB,EC2BpB,cAAc,EAAE,SAAS,EACzB,cAAc,EAAE,SAAS,EACzB,WAAW,EAAE,GAAG,EAChB,SAAS,EDvBH,SAAS,GCwBlB;;AAED,AAAA,CAAC,CAAC,EACE,KAAK,EDhCI,OAAe,GCiC3B;;AAED,AAAA,CAAC,EAAE,CAAC,CAAC,OAAO,EAAE,CAAC,CAAC,KAAK,CAAC,EAClB,eAAe,EAAE,IAAI,GACxB;;AAED,AAAA,UAAU,CAAC,EACP,OAAO,EAAE,IAAI,GAChB;;AC9CD,AAAA,WAAW,CAAC,EACR,UAAU,EAAE,KAAK,EACjB,OAAO,EAAE,QAAQ,GAWpB;;AAbD,AAGI,WAHO,CAGP,CAAC,EAHL,WAAW,CAGJ,CAAC,CAAC,OAAO,CAAC,EACT,cAAc,EAAE,SAAS,EACzB,cAAc,EAAE,MAAM,EACtB,SAAS,EFGP,SAAS,EEFX,KAAK,EFLN,OAAkB,GEUpB;;AAZL,AASQ,WATG,CAGP,CAAC,CAMK,GAAI,CAAA,UAAU,GATxB,WAAW,CAGJ,CAAC,CAAC,OAAO,CAMN,GAAI,CAAA,UAAU,EAAE,EACd,YAAY,EAAE,KAAK,GACtB;;ACXT,AAAA,KAAK,CAAC,EACF,OAAO,EAAE,IAAI,EACb,SAAS,EAAE,IAAI,EACf,eAAe,EAAE,MAAM,GAiB1B;;AApBD,AAOI,YAPC,CAOQ,EACL,gBAAgB,EAAE,2BAA2B,EAC7C,MAAM,EAAE,QAAQ,EAChB,KAAK,EAAE,QAAQ,EACf,iBAAiB,EAAE,SAAS,EAC5B,mBAAmB,EAAE,QAAQ,EAC7B,eAAe,EAAE,IAAI,EACrB,aAAa,EAAE,SAAS,GAC3B"
+}
