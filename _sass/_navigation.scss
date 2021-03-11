@@ -1,14 +1,92 @@
 .navigation {
-    text-align: right;
-    padding: 1.5rem 0;
-    a, a:visited {
-        text-transform: uppercase;
-        letter-spacing: .125em;
-        font-size: $font-sm;
-        color: $blue;
 
-        &:not(last-child) {
-            margin-right: 1.5em;
+    &__wrapper {
+        background-color: $evergreen;
+    }
+
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+
+    &__hamburger {
+        
+        > span {
+            transition: all 200ms ease-in-out;
+            display: block;
+            width: 1.875rem;
+            height: 0.125rem;
+            background-color: $lightGray;
+            &:not(:last-child) {
+                margin-bottom: 0.25rem;
+            }
+        }
+
+        @include breakpoint-up(medium) {
+            display: none;
+        }
+    }
+
+    &__links {
+        display: none;
+
+        a, a:visited{
+            text-transform: uppercase;
+            letter-spacing: .125rem;
+            font-size: $font-sm;
+            color: $lightGray;
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+        }
+
+        a:hover {
+            color: $gold;
+        }
+
+        @include breakpoint-up(medium) {
+            display: inline-block;
+        }
+    }
+
+    &__menu {
+        a, a:visited{
+            text-transform: uppercase;
+            letter-spacing: .125rem;
+            font-size: $font-lg;
+            color: $lightGray;
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__overlay {
+        visibility: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 3.875rem;
+        bottom: 0;
+        background-color: $evergreen;
+    }
+
+    &__clicked {
+        > span:nth-child(1) {
+            transform: rotate(-45deg);
+            margin-top: 0.625rem;
+        }
+
+        > span:nth-child(2) {
+            transform: rotate(45deg);
+            margin-top: -0.3125rem;
+        }
+
+        > span:nth-child(3) {
+            opacity: 0;
+            transform: rotate(45deg);
         }
     }
 }

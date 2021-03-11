@@ -1,21 +1,60 @@
 .hero {
+    margin-top: 1.75rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
+    @include breakpoint-up(medium) {
+        justify-content: flex-start;
+        align-items: center;
+    }
 
+    @include breakpoint-up(large) {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        margin-top: 0;
+        font-weight: 200;
+        font-size: $font-lg;
+        color: $gold;
+    }
 
     &__photo {
         background-image: url('/assets/IMG_4950.JPG');
-        height: 31.25rem;
-        width: 31.25rem;
+        height: 80vw;
+        width: 80vw;
         background-repeat: no-repeat;
         background-position: 110% 50%;
         background-size: 100%;
-        border-radius: 15.625rem;
+        border-radius: 40vw;
+
+        @include breakpoint-up(medium) {
+            height: 30vw;
+            width: 30vw;
+            border-radius: 15vw;
+        }
+
+        @include breakpoint-up(large) {
+            height: 19.4375rem;
+            width: 19.4375rem;
+            border-radius: 9.75rem;
+        }
     };
 
-    &__blurb {
+    &__text {
+        @include breakpoint-up(medium) {
+            padding: 5vw 0 0 5vw;
+        }
+
+        @include breakpoint-up(large) {
+            padding: 0;
+            
+            h1 {
+                margin-top: 3.75rem;
+            }
+        }
 
     };
 }

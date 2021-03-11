@@ -1,8 +1,11 @@
 ---
 ---
-
+@import 'mixins';
 @import 'variables';
+@import 'animations';
 
 @import 'globals';
 @import 'navigation';
 @import 'hero';
+@import 'projects';
+@import 'skills';
