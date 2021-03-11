@@ -1,22 +1,87 @@
 .projects {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
     &__card {
-        box-shadow: 0rem 0.1875rem 0.75rem rgba(0,0,0,0.15);
-        margin-top: 1.5625rem;
-        border-radius: 0.3125rem;
-    }
-
-    &__image {
-        img {
-            max-width: 100%;
+        display: flex;
+        background-color: $lightGray;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid $rust;
+        border-radius: 1rem;
+        margin: 0.3125rem;
+        padding: 2.5rem 0 2.5rem 0;
+        @include breakpoint-up(medium){
+            justify-content: space-evenly;
         }
     }
 
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.625rem;
+        img {
+            width:75%;
+            min-width: 14.1875rem;
+            box-shadow: 0rem 0.1875rem 0.75rem rgba(0,0,0,0.15);
+            border-radius: 1rem;
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        @include breakpoint-up(medium) {
+            width: 18rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__text{
+       width: 75%;
+       max-width: 25rem;
+       min-width: 14.1875rem;
+
+       @include breakpoint-up(medium) {
+           width: 18rem;
+       }
+    }
+
+    &__title {
+
+    }
+
     &__description {
-        background-color: $evergreen;
-        color: $lightGray;
+        color: $green;
+    }
+
+    &__technologies {
+        height: 1.875rem;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 1rem 0;
+    }
+
+    &__technology {
+        font-family: 'Source Code Pro', monospace;
+        padding: 0.25rem;
+        background-color: $lightGreen;
+        border-radius: 0.3125rem;
+        margin: 0.1875rem 0;
+        color: $green;
+
+        &:not(:first-child) {
+            margin-left: 0.3125rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-evenly;
     }
 }

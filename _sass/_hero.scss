@@ -1,59 +1,71 @@
 .hero {
-    margin-top: 1.75rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 
     @include breakpoint-up(medium) {
-        justify-content: flex-start;
-        align-items: center;
-    }
+        margin-bottom: 1rem;
 
-    @include breakpoint-up(large) {
-        justify-content: space-between;
-        align-items: center;
+        &::before {
+            content: "";
+            background-image: url('/assets/IMG_4952.JPG');
+            background-position: center bottom;
+            height: 70vw;
+            max-height: 64rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            filter: grayscale(100%);
+            transform: scaleX(-1);
+        }
     }
 
     p {
         margin-top: 0;
-        font-weight: 200;
-        font-size: $font-lg;
-        color: $gold;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        font-size: 5vw;
+        color: $rust;
+        @include breakpoint-up(medium) {
+            font-size: $font-lg;
+        }
+        @include breakpoint-up(xlarge) {
+            font-size: 2rem;
+        }
     }
 
     &__photo {
-        background-image: url('/assets/IMG_4950.JPG');
-        height: 80vw;
-        width: 80vw;
+        background-image: url('/assets/IMG_4952.JPG');
+        transform: scaleX(-1);
+        height: 70vw;
+        max-height: 25rem;
+        width: 100%;
         background-repeat: no-repeat;
-        background-position: 110% 50%;
         background-size: 100%;
-        border-radius: 40vw;
+
+        filter: grayscale(100%);
 
         @include breakpoint-up(medium) {
-            height: 30vw;
-            width: 30vw;
-            border-radius: 15vw;
+            display: none;
         }
 
-        @include breakpoint-up(large) {
-            height: 19.4375rem;
-            width: 19.4375rem;
-            border-radius: 9.75rem;
-        }
+        // @include breakpoint-up(large) {
+        //     height: 19.4375rem;
+        //     width: 19.4375rem;
+        //     border-radius: 9.75rem;
+        // }
     };
 
     &__text {
-        @include breakpoint-up(medium) {
-            padding: 5vw 0 0 5vw;
-        }
+        width: 100%;
 
-        @include breakpoint-up(large) {
-            padding: 0;
-            
-            h1 {
-                margin-top: 3.75rem;
-            }
+        @include breakpoint-up(medium) {
+            // height: 100%;
+            width: 40%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
 
     };

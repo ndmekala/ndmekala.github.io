@@ -1,13 +1,16 @@
 .navigation {
 
     &__wrapper {
-        background-color: $evergreen;
+        background-color: $rust;
     }
 
     display: flex;
     justify-content: flex-end;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    @include breakpoint-up(medium) {
+        justify-content: center;
+    }
 
 
     &__hamburger {
@@ -42,7 +45,7 @@
         }
 
         a:hover {
-            color: $gold;
+            color: $lightGreen;
         }
 
         @include breakpoint-up(medium) {
@@ -61,6 +64,10 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
+
+        a:hover {
+            color: $lightRust;
+        }
     }
 
     &__overlay {
@@ -70,7 +77,7 @@
         right: 0;
         top: 3.875rem;
         bottom: 0;
-        background-color: $evergreen;
+        background-color: $rust;
     }
 
     &__clicked {

@@ -1,0 +1,89 @@
+.footer {
+    background-color: $lightGray;
+    &__box {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+
+        @include breakpoint-up(medium) {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+
+    &__links, &__socials, &__info {
+        width: 100%;
+        text-align: center;
+    }
+    &__links {
+        
+        a, a:visited{
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .125rem;
+            font-weight: 300;
+            font-size: $font-sm;
+            color: $mediumGray;
+            margin-bottom: 0.8125rem;
+
+            @include breakpoint-up(medium) {
+                margin-bottom: 0;
+                
+                &:not(:last-child){
+                    margin-bottom: 0.8125rem;
+
+                }
+            }
+        }
+
+        a:hover {
+            color: $rust;
+        }
+
+        @include breakpoint-up(medium) {
+            text-align: left;
+        }
+
+        @include breakpoint-up(medium) {
+            width: 12rem;
+        }
+    }
+    &__info {
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: $font-sm;
+            color: $mediumGray;
+            font-weight: 500;
+
+            @include breakpoint-up(medium) {
+                margin: 0;
+            }
+        }
+
+        @include breakpoint-up(medium) {
+            width: 12rem;
+        }
+    }
+    
+    &__socials {
+        @include breakpoint-up(medium) {
+            display: inline-flex;
+            justify-content: flex-end;
+            width: 12rem;
+            right:0;
+        }
+    }
+
+    &__social {
+        svg {
+            width: 2rem;
+            height: auto;
+            fill: $mediumGray;
+
+            &:hover {
+                fill: $rust;
+            }
+        }
+    }
+}
