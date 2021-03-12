@@ -23,6 +23,7 @@
         margin-bottom: 0.625rem;
         img {
             width:75%;
+            height: auto;
             min-width: 14.1875rem;
             box-shadow: 0rem 0.1875rem 0.75rem rgba(0,0,0,0.15);
             border-radius: 1rem;
@@ -35,6 +36,7 @@
 
         @include breakpoint-up(medium) {
             width: 18rem;
+            height: auto;
 
             img {
                 width: 100%;

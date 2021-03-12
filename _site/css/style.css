@@ -112,11 +112,11 @@ button:hover { background-color: #924616; color: #f2f2f2; }
 
 .projects__image { display: flex; justify-content: center; margin-bottom: 0.625rem; }
 
-.projects__image img { width: 75%; min-width: 14.1875rem; box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.15); border-radius: 1rem; transition: all 200ms ease-in-out; }
+.projects__image img { width: 75%; height: auto; min-width: 14.1875rem; box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.15); border-radius: 1rem; transition: all 200ms ease-in-out; }
 
 .projects__image img:hover { transform: scale(1.05); }
 
-@media (min-width: 40em) { .projects__image { width: 18rem; } .projects__image img { width: 100%; } }
+@media (min-width: 40em) { .projects__image { width: 18rem; height: auto; } .projects__image img { width: 100%; } }
 
 .projects__text { width: 75%; max-width: 25rem; min-width: 14.1875rem; }
 
