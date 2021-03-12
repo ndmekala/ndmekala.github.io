@@ -17,7 +17,7 @@
             background-repeat: no-repeat;
             background-size: 100%;
             filter: grayscale(100%);
-            transform: scaleX(-1, 0);
+            transform: scale(-1, 0);
         }
     }
 
@@ -37,7 +37,7 @@
 
     &__photo {
         background-image: url('/assets/IMG_4952.JPG');
-        transform: scaleX(-1);
+        transform: scale(-1, 0);
         height: 70vw;
         max-height: 25rem;
         width: 100%;
