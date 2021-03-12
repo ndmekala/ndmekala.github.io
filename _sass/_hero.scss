@@ -17,7 +17,10 @@
             background-repeat: no-repeat;
             background-size: 100%;
             filter: grayscale(100%);
-            transform: scale(-1, 0);
+            -ms-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            -moz-transform: scaleX(-1);
+            transform: scaleX(-1);
         }
     }
 
@@ -37,7 +40,10 @@
 
     &__photo {
         background-image: url('/assets/IMG_4952.JPG');
-        transform: scale(-1, 0);
+        -ms-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        transform: scaleX(-1);
         height: 70vw;
         max-height: 25rem;
         width: 100%;

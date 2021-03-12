@@ -88,7 +88,7 @@ button:hover { background-color: #924616; color: #f2f2f2; }
 
 .hero { display: flex; flex-wrap: wrap; justify-content: center; position: relative; }
 
-@media (min-width: 40em) { .hero { margin-bottom: 1rem; } .hero::before { content: ""; background-image: url("/assets/IMG_4952.JPG"); background-position: center bottom; height: 70vw; max-height: 64rem; width: 100%; background-repeat: no-repeat; background-size: 100%; filter: grayscale(100%); transform: scale(-1, 0); } }
+@media (min-width: 40em) { .hero { margin-bottom: 1rem; } .hero::before { content: ""; background-image: url("/assets/IMG_4952.JPG"); background-position: center bottom; height: 70vw; max-height: 64rem; width: 100%; background-repeat: no-repeat; background-size: 100%; filter: grayscale(100%); -ms-transform: scaleX(-1); -webkit-transform: scaleX(-1); -moz-transform: scaleX(-1); transform: scaleX(-1); } }
 
 .hero p { margin-top: 0; font-weight: 500; font-family: 'Inter', sans-serif; font-size: 5vw; color: #924616; }
 
@@ -96,7 +96,7 @@ button:hover { background-color: #924616; color: #f2f2f2; }
 
 @media (min-width: 87.5em) { .hero p { font-size: 2rem; } }
 
-.hero__photo { background-image: url("/assets/IMG_4952.JPG"); transform: scale(-1, 0); height: 70vw; max-height: 25rem; width: 100%; background-repeat: no-repeat; background-size: 100%; filter: grayscale(100%); }
+.hero__photo { background-image: url("/assets/IMG_4952.JPG"); -ms-transform: scaleX(-1); -webkit-transform: scaleX(-1); -moz-transform: scaleX(-1); transform: scaleX(-1); height: 70vw; max-height: 25rem; width: 100%; background-repeat: no-repeat; background-size: 100%; filter: grayscale(100%); }
 
 @media (min-width: 40em) { .hero__photo { display: none; } }
 
