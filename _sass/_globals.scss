@@ -1,17 +1,16 @@
 @import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+html { font-family: 'Inter', Arial, Helvetica, sans-serif; }
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html { font-family: 'Inter var', Arial, Helvetica, sans-serif; }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap');
 
 
+
 html {
     font-size: 100%;
     box-sizing: border-box;
-    overflow: hidden;
-    height: 100%
 }
 
 
@@ -22,13 +21,17 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF;
-    overflow: auto;
+    background-color: $white;
+}
+
+html, body {
     height: 100%;
+    overflow: auto;
+    overflow: initial;
 }
 
 h1 {
-    color: $rust;
+    color: $lightGray;
     font-weight: 700;
     font-size: 12vw;
     // font-family: 'Source Serif Pro', serif;
@@ -71,9 +74,25 @@ p {
     };
 }
 
+::selection {
+    background: $lightRust;    
+}
+
+::moz-selection {
+    background: $lightRust;
+}
+
 a, a:visited, a:hover {
     text-decoration: none;
     transition: all 200ms ease-in-out;
+}
+
+a, a:visited {
+    color: $rust;
+}
+
+a:hover {
+    color: $lightRust;
 }
 
 button {
@@ -92,6 +111,10 @@ button {
         background-color: $rust;
         color: $lightGray;
     };
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .container {

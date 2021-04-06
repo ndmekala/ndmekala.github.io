@@ -9,8 +9,9 @@
 
         &::before {
             content: "";
-            background-color: $green;
             // background-image: url('/assets/IMG_4952.JPG');
+            background-image: url('https://images.unsplash.com/photo-1534085874097-5ffb7a5e2dab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            // background-color: $green;
             background-position: center bottom;
             height: 70vw;
             max-height: 64rem;
@@ -30,7 +31,7 @@
         font-weight: 500;
         font-family: 'Inter', sans-serif;
         font-size: 5vw;
-        color: $rust;
+        color: $lightGray;
         @include breakpoint-up(medium) {
             font-size: $font-lg;
         }
@@ -70,10 +71,11 @@
 
         @include breakpoint-up(medium) {
             // height: 100%;
-            width: 40%;
+            // width: 40%;
             position: absolute;
-            right: 0;
+            // right: 0;
             bottom: 0;
+            text-align: right;
         }
 
     };

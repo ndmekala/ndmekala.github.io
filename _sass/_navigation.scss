@@ -2,8 +2,11 @@
 
     &__wrapper {
         background-color: $rust;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 999;
     }
-
     display: flex;
     justify-content: flex-end;
     padding-top: 1.5rem;
@@ -45,7 +48,7 @@
         }
 
         a:hover {
-            color: $lightGreen;
+            color: $lightRust;
         }
 
         @include breakpoint-up(medium) {
