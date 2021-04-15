@@ -31,10 +31,9 @@ html, body {
 }
 
 h1 {
-    color: $lightGray;
+    color: $mediumGray;
     font-weight: 700;
     font-size: 12vw;
-    // font-family: 'Source Serif Pro', serif;
     margin: 0 0 1.25rem 0;
     line-height: 1.01;
     @include breakpoint-up(medium) {
@@ -66,6 +65,7 @@ h3 {
 p {
     color: $mediumGray;
     font-weight: 400;
+    line-height: 1.4;
     font-family: 'Source Serif Pro', serif;
     font-size: $font-md;
     margin-top: 0;
@@ -116,6 +116,30 @@ button {
         outline: none;
     }
 }
+
+label {
+    font-family:  'Inter var', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: $mediumGray;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+  
+  input[type=text], [type=email]{
+    width: 100%;
+    background-color: $white;
+    margin-top: 0.3125rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    color: $mediumGray;
+    font-family: 'Inter var', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: 0.0625rem solid $mediumGray;
+    border-radius: 0.5rem;
+    outline: none;
+  }
+
+
 
 .container {
     padding: 1rem 1rem;

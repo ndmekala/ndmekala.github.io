@@ -1,0 +1,33 @@
+.contact {
+    &__wrapper {
+        border: 1px solid $rust;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        background-color: $lightGray;
+        margin: 0.3125rem;
+        padding: 2.5rem 0;
+    }
+
+    &__form {
+        padding: 1rem 1.5rem;
+        border: 1px solid $rust;
+        width: 75vw;
+        border-radius: 1rem;
+        background-color: $white;
+        max-width: 40rem;
+    }
+
+    &__message {
+        outline: none;
+        width: 100%;
+        height: 200px;
+        font-family: 'Inter var', Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        color: $mediumGray;
+        resize: none;
+        border: 0.0625rem solid $mediumGray;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}

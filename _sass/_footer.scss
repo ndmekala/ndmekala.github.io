@@ -1,5 +1,5 @@
 .footer {
-    background-color: $lightGray;
+    background-color: $white;
     &__box {
         display: flex;
         position: relative;
@@ -12,7 +12,7 @@
         }
     }
 
-    &__links, &__socials, &__info {
+    &__links, &__socials, &__info{
         width: 100%;
         text-align: center;
     }
@@ -52,9 +52,9 @@
     &__info {
         p {
             font-family: 'Inter', sans-serif;
-            font-size: $font-sm;
+            font-size: $font-md;
             color: $mediumGray;
-            font-weight: 500;
+            font-weight: 400;
 
             @include breakpoint-up(medium) {
                 margin: 0;
@@ -62,6 +62,7 @@
         }
 
         @include breakpoint-up(medium) {
+            text-align: left;
             width: 12rem;
         }
     }

@@ -6,14 +6,26 @@ layout: home
 ---
 
 <section class="about container">
-    <h2>About</h2>
-    <p><strong>Hi there! I’m Nirmal.</strong>👋🏽</p>
+    <p class="about__standout">Hi there! I’m <strong>Nirmal Mekala</strong>.👋🏽</p>
     <p>Right now, I write courses for a nonprofit that are being used on four continents. <strong>But I’m ready for a new direction in my career.</strong></p>
     <p>My whole life I’ve been amazed and bewildered by the digital world around me. What powers the websites and apps I use everyday? That question has driven me to teach myself web development.</p>
     <p><strong>I’ve had a blast.</strong> Web development is a fresh and exciting challenge that lets me utilize the creativity, drive, problem-solving ability, and endless curiosity that made me a good writer.</p>
-    <p>So here we are! <em>Take a look at my work below and let’s connect.</em></p>
+    <p>So here we are! <em>Take a look at my work below and let’s <a href="#contact">connect</a>.</em></p>
 </section>
-<section id="project" class="container">
+<section class="skills container">
+    <h2 id="skills">Skills</h2>
+    <div class="list">
+        <span class="skills__item skills__language">HTML5</span>
+        <span class="skills__item skills__language">JS(ES6)</span>
+        <span class="skills__item skills__language">CSS3</span>
+        <span class="skills__item skills__tool">NPM</span>
+        <span class="skills__item skills__tool">Git</span>
+        <span class="skills__item skills__tool">GitHub</span>
+        <span class="skills__item skills__tool">Webpack</span>
+        <span class="skills__item skills__tool">Jekyll</span>
+    </div>
+</section>
+<section id="projects" class="container">
     <h2>Projects</h2>
     <div class="projects">
         <div class="projects__card">
@@ -85,16 +97,19 @@ layout: home
     </div>
     
 </section>
-<section class="skills container">
-    <h2>Skills</h2>
-    <div class="list">
-        <span class="skills__item skills__language">HTML5</span>
-        <span class="skills__item skills__language">JS(ES6)</span>
-        <span class="skills__item skills__language">CSS3</span>
-        <span class="skills__item skills__tool">NPM</span>
-        <span class="skills__item skills__tool">Git</span>
-        <span class="skills__item skills__tool">GitHub</span>
-        <span class="skills__item skills__tool">Webpack</span>
-        <span class="skills__item skills__tool">Jekyll</span>
+<section class="contact container">
+    <h2 id="contact">Contact</h2>
+    <div class="contact__wrapper">
+        <div class="contact__form">
+            <form action="https://api.staticforms.co/submit?form=WwEcgO" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="_name" />
+                <label for="email">Email</label>
+                <input type="email" name="_email" />
+                <label for="message">Message</label>
+                <textarea name="message" class="contact__message"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
     </div>
 </section>

@@ -30,7 +30,7 @@ body { margin: 0; padding: 0; background-color: #ffffff; }
 
 html, body { height: 100%; overflow: auto; overflow: initial; }
 
-h1 { color: #f2f2f2; font-weight: 700; font-size: 12vw; margin: 0 0 1.25rem 0; line-height: 1.01; }
+h1 { color: #4d4d4d; font-weight: 700; font-size: 12vw; margin: 0 0 1.25rem 0; line-height: 1.01; }
 
 @media (min-width: 40em) { h1 { font-size: 10vw; } }
 
@@ -42,7 +42,7 @@ h2 { color: #924616; text-transform: uppercase; letter-spacing: 0.1875rem; font-
 
 h3 { margin-top: 0.1875rem; color: #326754; font-size: 1.5rem; }
 
-p { color: #4d4d4d; font-weight: 400; font-family: 'Source Serif Pro', serif; font-size: 1.0625rem; margin-top: 0; }
+p { color: #4d4d4d; font-weight: 400; line-height: 1.4; font-family: 'Source Serif Pro', serif; font-size: 1.0625rem; margin-top: 0; }
 
 @media (min-width: 40em) { p { font-size: 1.5rem; } }
 
@@ -62,13 +62,15 @@ button:hover { background-color: #924616; color: #f2f2f2; }
 
 button:focus { outline: none; }
 
+label { font-family: 'Inter var', Arial, Helvetica, sans-serif; font-weight: 400; color: #4d4d4d; font-size: 0.75rem; text-transform: uppercase; }
+
+input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-top: 0.3125rem; margin-bottom: 1rem; height: 2rem; color: #4d4d4d; font-family: 'Inter var', Arial, Helvetica, sans-serif; font-size: 1rem; border: 0.0625rem solid #4d4d4d; border-radius: 0.5rem; outline: none; }
+
 .container { padding: 1rem 1rem; max-width: 55rem; margin: 0 auto; }
 
 .navigation { display: flex; justify-content: flex-end; padding-top: 1.5rem; padding-bottom: 1.5rem; }
 
-.navigation__wrapper { background-color: #924616; width: 100%; position: fixed; top: 0; z-index: 999; }
-
-@media (min-width: 40em) { .navigation { justify-content: center; } }
+.navigation__wrapper { background-color: #ffffff; width: 100%; top: 0; }
 
 .navigation__hamburger > span { transition: all 200ms ease-in-out; display: block; width: 1.875rem; height: 0.125rem; background-color: #f2f2f2; }
 
@@ -78,7 +80,7 @@ button:focus { outline: none; }
 
 .navigation__links { display: none; }
 
-.navigation__links a, .navigation__links a:visited { text-transform: uppercase; letter-spacing: .125rem; font-size: 0.8125rem; color: #f2f2f2; }
+.navigation__links a, .navigation__links a:visited { text-transform: uppercase; letter-spacing: .125rem; font-size: 0.8125rem; color: #4d4d4d; }
 
 .navigation__links a:not(:last-child), .navigation__links a:visited:not(:last-child) { margin-right: 1.5rem; }
 
@@ -152,7 +154,7 @@ button:focus { outline: none; }
 
 .skills__tool { background-color: #924616; color: #f2f2f2; border: none; }
 
-.footer { background-color: #f2f2f2; }
+.footer { background-color: #ffffff; }
 
 .footer__box { display: flex; position: relative; flex-wrap: wrap; }
 
@@ -170,16 +172,26 @@ button:focus { outline: none; }
 
 @media (min-width: 40em) { .footer__links { width: 12rem; } }
 
-.footer__info p { font-family: 'Inter', sans-serif; font-size: 0.8125rem; color: #4d4d4d; font-weight: 500; }
+.footer__info p { font-family: 'Inter', sans-serif; font-size: 1.0625rem; color: #4d4d4d; font-weight: 400; }
 
 @media (min-width: 40em) { .footer__info p { margin: 0; } }
 
-@media (min-width: 40em) { .footer__info { width: 12rem; } }
+@media (min-width: 40em) { .footer__info { text-align: left; width: 12rem; } }
 
 @media (min-width: 40em) { .footer__socials { display: inline-flex; justify-content: flex-end; width: 12rem; right: 0; } }
 
 .footer__social svg { width: 2rem; height: auto; fill: #4d4d4d; }
 
 .footer__social svg:hover { fill: #924616; }
+
+.about__standout { font-size: 1.75rem; color: #924616; line-height: 1; margin-bottom: 1rem; }
+
+@media (min-width: 40em) { .about__standout { font-size: 2.5rem; margin-bottom: 1.5rem; } }
+
+.contact__wrapper { border: 1px solid #924616; border-radius: 1rem; display: flex; justify-content: center; background-color: #f2f2f2; margin: 0.3125rem; padding: 2.5rem 0; }
+
+.contact__form { padding: 1rem 1.5rem; border: 1px solid #924616; width: 75vw; border-radius: 1rem; background-color: #ffffff; max-width: 40rem; }
+
+.contact__message { outline: none; width: 100%; height: 200px; font-family: 'Inter var', Arial, Helvetica, sans-serif; font-size: 1rem; color: #4d4d4d; resize: none; border: 0.0625rem solid #4d4d4d; border-radius: 0.5rem; margin-bottom: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

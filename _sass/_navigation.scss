@@ -1,19 +1,14 @@
 .navigation {
 
     &__wrapper {
-        background-color: $rust;
+        background-color: $white;
         width: 100%;
-        position: fixed;
         top: 0;
-        z-index: 999;
     }
     display: flex;
     justify-content: flex-end;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    @include breakpoint-up(medium) {
-        justify-content: center;
-    }
 
 
     &__hamburger {
@@ -41,7 +36,7 @@
             text-transform: uppercase;
             letter-spacing: .125rem;
             font-size: $font-sm;
-            color: $lightGray;
+            color: $mediumGray;
             &:not(:last-child) {
                 margin-right: 1.5rem;
             }
