@@ -29,7 +29,7 @@
     p {
         margin-top: 0;
         font-weight: 500;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter var', Arial, Helvetica, sans-serif;
         font-size: 5vw;
         color: $lightGray;
         @include breakpoint-up(medium) {

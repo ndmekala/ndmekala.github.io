@@ -39,8 +39,8 @@
             width: 18rem;
 
             img {
-                width: 100%;
-                height: 100%;
+                width: 18rem;
+                height: 18rem;
             }
         }
     }
@@ -71,7 +71,7 @@
     }
 
     &__technology {
-        font-family: 'Source Code Pro', monospace;
+        font-family: 'Source Code Pro', 'Courier', monospace;
         padding: 0.25rem;
         background-color: $lightGreen;
         border-radius: 0.3125rem;
@@ -83,8 +83,61 @@
         }
     }
 
+    &__tool {
+        font-family: 'Source Code Pro', 'Courier', monospace;
+        padding: 0.25rem;
+        background-color: $lightRust;
+        border-radius: 0.3125rem;
+        margin: 0.1875rem 0;
+        color: $rust;
+
+        &:not(:first-child) {
+            margin-left: 0.3125rem;
+        }
+    }
+
     &__links {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    &__calc {
+        content: url('../assets/images/calc-still.gif');
+
+        &:hover {
+            content: url('../assets/images/calc-hover.gif')
+        }
+    }
+
+    &__etch {
+        content: url('../assets/images/etch-still.gif');
+
+        &:hover {
+            content: url('../assets/images/etch-hover.gif')
+        }
+    }
+
+    &__todo {
+        content: url('../assets/images/tasks-still.gif');
+
+        &:hover {
+            content: url('../assets/images/tasks-hover.gif')
+        }
+    }
+
+    &__weather {
+        content: url('../assets/images/weather-still.gif');
+
+        &:hover {
+            content: url('../assets/images/weather-hover.gif')
+        }
+    }
+
+    &__personal {
+        content: url('../assets/images/personal-still.gif');
+
+        &:hover {
+            content: url('../assets/images/personal-still.gif')
+        }
     }
 }

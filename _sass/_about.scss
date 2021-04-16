@@ -1,4 +1,10 @@
 .about {
+
+    margin-top: 1rem;
+
+    @include breakpoint-up(medium) {
+        margin-top: 4rem;
+    }
     
     &__standout {
         font-size: 1.75rem;

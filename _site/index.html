@@ -1,18 +1,21 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
+    <meta name="description" content="The portfolio site of Nirmal Mekala">
     <link rel="stylesheet" href="/css/style.css">
-    <!-- <title>Nirmal Mekala</title> -->
+    <link rel="icon" type="image/png" href="/favico.png">
+    <link rel="canonical" href="http://www.meka.la">
+    <title>Nirmal Mekala</title>
 </head>
 <body>
     <div class="navigation__overlay">
         <div class="navigation__menu">
-            <a href="#skills">Skills</a>
-            <a href="#Projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="https://www.meka.la/">Home</a>
+            <a href="https://www.linkedin.com/in/nirmal-mekala-87841b83/">LinkedIn</a>
+            <a href="https://github.com/ndmekala">GitHub</a>
         </div>
     </div>
     <div class="navigation__wrapper">
@@ -30,6 +33,7 @@
         </nav>
     </div>
     <main>
+        
         <!-- <div class="hero">
             <div class="hero__photo">
             </div>
@@ -40,18 +44,19 @@
             </div>
         </div> -->
         <section class="about container">
-    <p class="about__standout">Hi there! I’m <strong>Nirmal Mekala</strong>.👋🏽</p>
+    <p class="about__standout">Hi there! I’m <strong>Nirmal Mekala</strong>.👋🏾</p>
     <p>Right now, I write courses for a nonprofit that are being used on four continents. <strong>But I’m ready for a new direction in my career.</strong></p>
     <p>My whole life I’ve been amazed and bewildered by the digital world around me. What powers the websites and apps I use everyday? That question has driven me to teach myself web development.</p>
     <p><strong>I’ve had a blast.</strong> Web development is a fresh and exciting challenge that lets me utilize the creativity, drive, problem-solving ability, and endless curiosity that made me a good writer.</p>
     <p>So here we are! <em>Take a look at my work below and let’s <a href="#contact">connect</a>.</em></p>
 </section>
 <section class="skills container">
-    <h2 id="skills">Skills</h2>
+    <h1 id="skills">Skills</h1>
     <div class="list">
         <span class="skills__item skills__language">HTML5</span>
         <span class="skills__item skills__language">JS(ES6)</span>
         <span class="skills__item skills__language">CSS3</span>
+        <span class="skills__item skills__language">Sass</span>
         <span class="skills__item skills__tool">NPM</span>
         <span class="skills__item skills__tool">Git</span>
         <span class="skills__item skills__tool">GitHub</span>
@@ -59,16 +64,16 @@
         <span class="skills__item skills__tool">Jekyll</span>
     </div>
 </section>
-<section id="projects" class="container">
-    <h2>Projects</h2>
+<section class="container">
+    <h1 id="projects">Projects</h1>
     <div class="projects">
         <div class="projects__card">
             <div class="projects__image">
-                <img src="/assets/images/weather.gif" alt="Weather app">
+                <img src="" class="projects__weather" alt="Weather app preview" onclick="location.href='https://ndmekala.github.io/weather'">
             </div>
             <div class="projects__text">
                 <div class="projects__title">
-                    <h3>OpenWeather App</h3>
+                    <h2>OpenWeather App</h2>
                 </div>
                 <div class="projects__technologies">
                     <span class="projects__technology">JS</span>
@@ -86,11 +91,56 @@
         </div>
         <div class="projects__card">
             <div class="projects__image">
-                <img src="/assets/Screen Shot 2021-03-11 at 2.05.56 PM.png" alt="Responsive calculator app">
+                <img src="" class="projects__todo" alt="Todo app preview" onclick="location.href='https://ndmekala.github.io/todo/'">
             </div>
             <div class="projects__text">
                 <div class="projects__title">
-                    <h3>Responsive Calculator</h3>
+                    <h2>Tasks</h2>
+                </div>
+                <div class="projects__technologies">
+                    <span class="projects__technology">JS</span>
+                    <span class="projects__technology">HTML5</span>
+                    <span class="projects__technology">CSS3</span>
+                </div>
+                <div class="projects__description">
+                    <p>A simple, responsive todo app.</p>
+                </div>
+                <div class="projects__links">
+                    <button onclick="location.href='https://ndmekala.github.io/todo/'">Preview</button>
+                    <button onclick="location.href='https://www.github.com/ndmekala/todo/'">Repository</button>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <div class="projects__image">
+                <img src="" class="projects__personal" alt="Personal site preview" onclick="location.href='https://ndmekala.github.io/'">
+            </div>
+            <div class="projects__text">
+                <div class="projects__title">
+                    <h2>Portfolio Site</h2>
+                </div>
+                <div class="projects__technologies">
+                    <span class="projects__technology">JS</span>
+                    <span class="projects__technology">HTML5</span>
+                    <span class="projects__technology">Sass</span>
+                    <span class="projects__tool">Jekyll</span>
+                </div>
+                <div class="projects__description">
+                    <p>This portfolio page! A static site built from scratch that executes a simple but sound design with Sass and Jekyll.</p>
+                </div>
+                <div class="projects__links">
+                    <button onclick="location.href='https://ndmekala.github.io/'">Preview</button>
+                    <button onclick="location.href='https://www.github.com/ndmekala/ndmekala.github.io/'">Repository</button>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <div class="projects__image">
+                <img src="" class="projects__calc" alt="Responsive calculator app preview" onclick="location.href='https://ndmekala.github.io/calculator'">
+            </div>
+            <div class="projects__text">
+                <div class="projects__title">
+                    <h2>Responsive Calculator</h2>
                 </div>
                 <div class="projects__technologies">
                     <span class="projects__technology">JS</span>
@@ -108,11 +158,11 @@
         </div>
         <div class="projects__card">
             <div class="projects__image">
-                <img src="/assets/Screen Shot 2021-03-11 at 12.29.04 PM.png" alt="Etch-a-sketch app">
+                <img src="" class="projects__etch" alt="Etch-a-sketch app preview" onclick="location.href='https://ndmekala.github.io/etch-a-sketch'">
             </div>
             <div class="projects__text">
                 <div class="projects__title">
-                    <h3>Pixel Draw</h3>
+                    <h2>Pixel Draw</h2>
                 </div>
                 <div class="projects__technologies">
                     <span class="projects__technology">JS</span>
@@ -132,24 +182,24 @@
     
 </section>
 <section class="contact container">
-    <h2 id="contact">Contact</h2>
+    <h1 id="contact">Contact</h1>
     <div class="contact__wrapper">
         <div class="contact__form">
             <form action="https://api.staticforms.co/submit?form=WwEcgO" method="POST">
                 <label for="name">Name</label>
-                <input type="text" name="_name" />
+                <input type="text" name="_name" id='name' required>
                 <label for="email">Email</label>
-                <input type="email" name="_email" />
+                <input type="email" name="_email" id='email' required>
                 <label for="message">Message</label>
-                <textarea name="message" class="contact__message"></textarea>
-                <button type="submit">Submit</button>
+                <textarea name="message" class="contact__message" id='message' required></textarea>
+                <label for="submit"></label>
+                <button type="submit" id='submit'>Submit</button>
               </form>
         </div>
     </div>
 </section>
     </main>
     <footer class="footer">
-        <!-- This should be altered to follow closely Joel Hook’s design… Don’t need nav links in bottom for site of this scope -->
         <div class="footer__box container">
             <div class="footer__info">
                 <p>Nirmal Mekala © 2021</p>
