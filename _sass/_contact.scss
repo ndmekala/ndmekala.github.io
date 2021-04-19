@@ -1,18 +1,19 @@
 .contact {
+
     &__wrapper {
-        border: 1px solid $rust;
+        
         border-radius: 1rem;
         display: flex;
         justify-content: center;
         background-color: $lightGray;
         margin: 0.3125rem;
-        padding: 2.5rem 0;
+        padding: 0;
     }
 
     &__form {
         padding: 1rem 1.5rem;
         border: 1px solid $rust;
-        width: 75vw;
+        width: 100%;
         border-radius: 1rem;
         background-color: $white;
         max-width: 40rem;
@@ -29,5 +30,16 @@
         border: 0.0625rem solid $mediumGray;
         border-radius: 0.5rem;
         margin-bottom: 1rem;
+    }
+
+    @include breakpoint-up(medium) {
+        &__wrapper {
+            border: 1px solid $rust;
+            padding: 2.5rem 0;
+        }   
+
+        &__form {
+            width: 75vw;
+        }
     }
 }

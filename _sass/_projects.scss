@@ -102,42 +102,22 @@
     }
 
     &__calc {
-        content: url('../assets/images/calc-still.gif');
-
-        &:hover {
-            content: url('../assets/images/calc-hover.gif')
-        }
+        content: url('../assets/images/calc.gif');
     }
 
     &__etch {
-        content: url('../assets/images/etch-still.gif');
-
-        &:hover {
-            content: url('../assets/images/etch-hover.gif')
-        }
+        content: url('../assets/images/etch.gif');
     }
 
     &__todo {
-        content: url('../assets/images/tasks-still.gif');
-
-        &:hover {
-            content: url('../assets/images/tasks-hover.gif')
-        }
+        content: url('../assets/images/tasks.gif');
     }
 
     &__weather {
-        content: url('../assets/images/weather-still.gif');
-
-        &:hover {
-            content: url('../assets/images/weather-hover.gif')
-        }
+        content: url('../assets/images/weather.gif');
     }
 
     &__personal {
-        content: url('../assets/images/personal-still.gif');
-
-        &:hover {
-            content: url('../assets/images/personal-still.gif')
-        }
+        content: url('../assets/images/personal.gif');
     }
 }
