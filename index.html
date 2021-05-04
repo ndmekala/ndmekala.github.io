@@ -12,9 +12,10 @@ layout: home
 </section>
 <section class="skills container">
     <h1 id="skills">Skills</h1>
-    <div class="list">
+    <div class="skills__list">
         <span class="skills__item skills__language">HTML5</span>
         <span class="skills__item skills__language">JS(ES6)</span>
+        <span class="skills__item skills__language">React.js</span>
         <span class="skills__item skills__language">CSS3</span>
         <span class="skills__item skills__language">Sass</span>
         <span class="skills__item skills__tool">NPM</span>
@@ -22,11 +23,35 @@ layout: home
         <span class="skills__item skills__tool">GitHub</span>
         <span class="skills__item skills__tool">Webpack</span>
         <span class="skills__item skills__tool">Jekyll</span>
+        <span class="skills__item skills__tool">Bootstrap</span>
     </div>
 </section>
-<section class="container">
+<section class="projects container">
     <h1 id="projects">Projects</h1>
-    <div class="projects">
+    <div class="projects__wrapper">
+        <div class="projects__card">
+            <div class="projects__image">
+                <img src="" class="projects__cvapp" alt="CV App preview" onclick="location.href='https://ndmekala.github.io/cvapp'">
+            </div>
+            <div class="projects__text">
+                <div class="projects__title">
+                    <h2>CV App</h2>
+                </div>
+                <div class="projects__technologies">
+                    <span class="projects__technology">React.js</span>
+                    <span class="projects__technology">HTML5</span>
+                    <span class="projects__technology">CSS3</span>
+                    <span class="projects__tool">Bootstrap</span>
+                </div>
+                <div class="projects__description">
+                    <p>Generates a CV based on form data supplied by the user.</p>
+                </div>
+                <div class="projects__links">
+                    <button onclick="location.href='https://ndmekala.github.io/cvapp'">Preview</button>
+                    <button onclick="location.href='https://www.github.com/ndmekala/cvapp'">Repository</button>
+                </div>
+            </div>
+        </div>
         <div class="projects__card">
             <div class="projects__image">
                 <img src="" class="projects__weather" alt="Weather app preview" onclick="location.href='https://ndmekala.github.io/weather'">

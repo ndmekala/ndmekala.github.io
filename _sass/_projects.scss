@@ -1,7 +1,10 @@
 .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
     &__card {
         display: flex;
@@ -76,7 +79,7 @@
         background-color: $lightGreen;
         border-radius: 0.3125rem;
         margin: 0.1875rem 0;
-        color: $green;
+        color: $mediumGray;
 
         &:not(:first-child) {
             margin-left: 0.3125rem;
@@ -99,6 +102,10 @@
     &__links {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    &__cvapp {
+        content: url('../assets/images/cv.gif');
     }
 
     &__calc {
