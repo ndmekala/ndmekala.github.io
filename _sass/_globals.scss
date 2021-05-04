@@ -85,6 +85,7 @@ p {
 a, a:visited, a:hover {
     text-decoration: none;
     transition: all 200ms ease-in-out;
+    outline-color: $mediumGray;
 }
 
 a, a:visited {
@@ -113,7 +114,7 @@ button {
     };
 
     &:focus {
-        outline: none;
+        outline-color: $mediumGray;
     }
 }
 
@@ -136,7 +137,7 @@ label {
     font-size: 1rem;
     border: 0.0625rem solid $mediumGray;
     border-radius: 0.5rem;
-    outline: none;
+    outline-color: $mediumGray;
   }
 
 

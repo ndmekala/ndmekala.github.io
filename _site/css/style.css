@@ -42,7 +42,7 @@ p { color: #4d4d4d; font-weight: 400; line-height: 1.4; font-family: 'Source Ser
 
 ::moz-selection { background: #f3c9af; }
 
-a, a:visited, a:hover { text-decoration: none; transition: all 200ms ease-in-out; }
+a, a:visited, a:hover { text-decoration: none; transition: all 200ms ease-in-out; outline-color: #4d4d4d; }
 
 a, a:visited { color: #924616; }
 
@@ -52,11 +52,11 @@ button { padding: 0.875rem; text-transform: uppercase; font-family: 'Inter var',
 
 button:hover { background-color: #98cdba; color: #4d4d4d; }
 
-button:focus { outline: none; }
+button:focus { outline-color: #4d4d4d; }
 
 label { font-family: 'Inter var', Arial, Helvetica, sans-serif; font-weight: 400; color: #4d4d4d; font-size: 0.75rem; text-transform: uppercase; }
 
-input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-top: 0.3125rem; margin-bottom: 1rem; height: 2rem; color: #4d4d4d; font-family: 'Inter var', Arial, Helvetica, sans-serif; font-size: 1rem; border: 0.0625rem solid #4d4d4d; border-radius: 0.5rem; outline: none; }
+input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-top: 0.3125rem; margin-bottom: 1rem; height: 2rem; color: #4d4d4d; font-family: 'Inter var', Arial, Helvetica, sans-serif; font-size: 1rem; border: 0.0625rem solid #4d4d4d; border-radius: 0.5rem; outline-color: #4d4d4d; }
 
 .container { padding: 1rem 1rem; max-width: 55rem; margin: 0 auto; }
 
@@ -202,7 +202,7 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .contact__form { padding: 1rem 1.5rem; border: 1px solid #924616; width: 100%; border-radius: 1rem; background-color: #ffffff; max-width: 40rem; }
 
-.contact__message { outline: none; width: 100%; height: 200px; font-family: 'Inter var', Arial, Helvetica, sans-serif; font-size: 1rem; color: #4d4d4d; resize: none; border: 0.0625rem solid #4d4d4d; border-radius: 0.5rem; margin-bottom: 1rem; }
+.contact__message { outline-color: #4d4d4d; width: 100%; height: 200px; font-family: 'Inter var', Arial, Helvetica, sans-serif; font-size: 1rem; color: #4d4d4d; resize: none; border: 0.0625rem solid #4d4d4d; border-radius: 0.5rem; margin-bottom: 1rem; }
 
 @media (min-width: 40em) { .contact__wrapper { border: 1px solid #924616; padding: 2.5rem 0; } .contact__form { width: 75vw; } }
 
