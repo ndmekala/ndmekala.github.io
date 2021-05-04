@@ -30,23 +30,6 @@ html, body {
     overflow: initial;
 }
 
-// h1 {
-//     color: $mediumGray;
-//     font-weight: 700;
-//     font-size: 12vw;
-//     margin: 0 0 1.25rem 0;
-//     line-height: 1.01;
-//     @include breakpoint-up(medium) {
-//         font-size: 10vw;
-//     }
-//     @include breakpoint-up(large) {
-//         font-size: 6rem;
-//     }
-//     @include breakpoint-up(xlarge) {
-//         font-size: 10rem;
-//     }
-// }
-
 h1 {
     color: $rust;
     text-transform: uppercase;
