@@ -192,11 +192,13 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .about { margin-top: 1rem; }
 
+.about h1 { display: none; }
+
 @media (min-width: 40em) { .about { margin-top: 4rem; } }
 
-.about__standout { font-size: 1.75rem; color: #924616; line-height: 1; margin-bottom: 1rem; }
+.about__standout { font-size: 1.5rem; color: #924616; line-height: 1; margin-bottom: 1rem; }
 
-@media (min-width: 40em) { .about__standout { font-size: 2.5rem; margin-bottom: 1.5rem; } }
+@media (min-width: 40em) { .about__standout { font-size: 2rem; margin-bottom: 1.5rem; } }
 
 .contact__wrapper { border-radius: 1rem; display: flex; justify-content: center; background-color: #f2f2f2; margin: 0.3125rem; padding: 0; }
 

@@ -2,18 +2,22 @@
 
     margin-top: 1rem;
 
+    h1 {
+        display: none;
+    }
+
     @include breakpoint-up(medium) {
         margin-top: 4rem;
     }
     
     &__standout {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         color: $rust;
         line-height: 1;
         margin-bottom: 1rem;
         
         @include breakpoint-up(medium) {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 1.5rem;
         }
     }
