@@ -104,6 +104,10 @@
         justify-content: space-evenly;
     }
 
+    &__memory {
+        content: url('../assets/images/memory.gif')
+    }
+
     &__cvapp {
         content: url('../assets/images/cv.gif');
     }

@@ -142,6 +142,8 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .projects__links { display: flex; justify-content: space-evenly; }
 
+.projects__memory { content: url("../assets/images/memory.gif"); }
+
 .projects__cvapp { content: url("../assets/images/cv.gif"); }
 
 .projects__calc { content: url("../assets/images/calc.gif"); }
