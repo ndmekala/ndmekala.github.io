@@ -1,0 +1,7 @@
+repo: memory
+src: ../assets/images/memory.gif
+alt: Queen’s Gambit Memory Game app preview
+title: Queen’s Gambit Memory Game
+technologies: [React.js, CSS3]
+tools: []
+description: This game tests your memory. Don’t click the same chess opening twice!

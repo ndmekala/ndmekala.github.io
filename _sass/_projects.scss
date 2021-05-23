@@ -104,31 +104,11 @@
         justify-content: space-evenly;
     }
 
-    &__memory {
-        content: url('../assets/images/memory.gif')
+    &__hidden {
+        display: none;
     }
 
-    &__cvapp {
-        content: url('../assets/images/cv.gif');
-    }
-
-    &__calc {
-        content: url('../assets/images/calc.gif');
-    }
-
-    &__etch {
-        content: url('../assets/images/etch.gif');
-    }
-
-    &__todo {
-        content: url('../assets/images/tasks.gif');
-    }
-
-    &__weather {
-        content: url('../assets/images/weather.gif');
-    }
-
-    &__personal {
-        content: url('../assets/images/personal.gif');
+    &__showall {
+        margin: 0.3125rem;
     }
 }

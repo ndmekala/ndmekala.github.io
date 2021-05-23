@@ -1,0 +1,7 @@
+repo: weather
+src: ../assets/images/weather.gif
+alt: OpenWeather App preview
+title: OpenWeather App
+technologies: [JS, HTML5, CSS3]
+tools: []
+description: An app that consumes the [OpenWeather](https://openweathermap.org/) API to display a given city’s forecast.

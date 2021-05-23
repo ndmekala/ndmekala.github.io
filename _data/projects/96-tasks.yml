@@ -1,0 +1,7 @@
+repo: todo
+src: ../assets/images/tasks.gif
+alt: Tasks app preview
+title: Tasks
+technologies: [JS, HTML, CSS3]
+tools: []
+description: A task management app that exports tasks to [Things 3](https://culturedcode.com/things) via JSON.

@@ -1,0 +1,7 @@
+repo: cvapp
+src: ../assets/images/cv.gif
+alt: CV App preview
+title: CV App
+technologies: [React.js]
+tools: [Bootstrap]
+description: Generates a CV based on form data supplied by the user.

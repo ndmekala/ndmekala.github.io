@@ -1,0 +1,7 @@
+repo: calculator
+src: ../assets/images/calc.gif
+alt: Responsive Calculator app preview
+title: Responsive Calculator
+technologies: [JS, HTML5, CSS3]
+tools: []
+description: A responsive clone of the iOS calculator.

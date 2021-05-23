@@ -1,0 +1,7 @@
+repo: etch-a-sketch
+src: ../assets/images/etch.gif
+alt: Pixel Draw app preview
+title: Pixel Draw
+technologies: [JS, HTML5, CSS3]
+tools: []
+description: Users can draw with their mouse on this digital etch-a-sketch.

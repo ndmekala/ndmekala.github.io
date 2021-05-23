@@ -11,3 +11,21 @@ hamburger.addEventListener(('click'), (e) => {
         overlay.classList.add('reveal');
     }
 })
+
+const showAll = document.querySelector('.projects__showall');
+showAll.addEventListener(('click'), () => {
+    const hiddenProjects = document.querySelectorAll('.projects__hidden')
+    if (Array.from(showAll.classList).includes('showing')) {
+        showAll.textContent = "View More"
+        showAll.classList.remove('showing')
+        hiddenProjects.forEach((project) => {
+            project.style.display = "none"
+        })
+    } else {
+        showAll.textContent = "Hide"
+        showAll.classList.add('showing')
+        hiddenProjects.forEach((project) => {
+            project.style.display = "flex"
+        })
+    }
+})

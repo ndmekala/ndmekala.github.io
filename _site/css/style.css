@@ -142,19 +142,9 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .projects__links { display: flex; justify-content: space-evenly; }
 
-.projects__memory { content: url("../assets/images/memory.gif"); }
+.projects__hidden { display: none; }
 
-.projects__cvapp { content: url("../assets/images/cv.gif"); }
-
-.projects__calc { content: url("../assets/images/calc.gif"); }
-
-.projects__etch { content: url("../assets/images/etch.gif"); }
-
-.projects__todo { content: url("../assets/images/tasks.gif"); }
-
-.projects__weather { content: url("../assets/images/weather.gif"); }
-
-.projects__personal { content: url("../assets/images/personal.gif"); }
+.projects__showall { margin: 0.3125rem; }
 
 .skills__item { display: inline-block; font-family: 'Source Code Pro', 'Courier', monospace; padding: 0.375rem; font-size: 1.5rem; border-radius: 0.625rem; margin: 1rem 0.5rem; }
 

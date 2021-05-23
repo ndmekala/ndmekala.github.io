@@ -1,0 +1,7 @@
+repo: ndmekala.github.io
+src: ../assets/images/personal.gif
+alt: Portfolio preview
+title: Portfolio Site
+technologies: [HTML5, Sass]
+tools: [Jekyll]
+description: Built from scratch, this portfolio focuses on responsive design and best practices.
