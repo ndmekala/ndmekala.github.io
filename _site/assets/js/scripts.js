@@ -18,6 +18,10 @@ showAll.addEventListener(('click'), () => {
     if (Array.from(showAll.classList).includes('showing')) {
         showAll.textContent = "View More"
         showAll.classList.remove('showing')
+        window.scrollTo({
+            top: document.querySelector('#projects').offsetTop,
+            behavior: "smooth",
+        })
         hiddenProjects.forEach((project) => {
             project.style.display = "none"
         })
@@ -26,6 +30,10 @@ showAll.addEventListener(('click'), () => {
         showAll.classList.add('showing')
         hiddenProjects.forEach((project) => {
             project.style.display = "flex"
+        })
+        window.scrollTo({
+            top: document.querySelectorAll('.projects__hidden')[0].offsetTop,
+            behavior: "smooth",
         })
     }
 })
