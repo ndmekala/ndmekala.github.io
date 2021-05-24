@@ -202,6 +202,8 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .post { margin-top: 5rem; }
 
+.post body { background-color: #f2f2f2; }
+
 .post h1 { text-transform: none; letter-spacing: 0; font-weight: 700; margin: 0 0 1.75rem 0; margin-top: 0.1875rem; color: #326754; font-size: 2.25rem; }
 
 /*# sourceMappingURL=style.css.map */

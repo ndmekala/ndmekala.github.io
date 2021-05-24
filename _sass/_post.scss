@@ -1,6 +1,10 @@
 .post {
     margin-top: 5rem;
 
+    body {
+        background-color: $lightGray
+    }
+
     h1 {
         text-transform: none;
         letter-spacing: 0;
