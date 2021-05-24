@@ -200,4 +200,8 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 @media (min-width: 40em) { .contact__wrapper { border: 1px solid #924616; padding: 2.5rem 0; } .contact__form { width: 75vw; } }
 
+.post { margin-top: 5rem; }
+
+.post h1 { text-transform: none; letter-spacing: 0; font-weight: 700; margin: 0 0 1.75rem 0; margin-top: 0.1875rem; color: #326754; font-size: 2.25rem; }
+
 /*# sourceMappingURL=style.css.map */
