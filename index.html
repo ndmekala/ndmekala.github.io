@@ -31,39 +31,14 @@ layout: default
 <section class="projects container">
     <h1 id="projects">Projects</h1>
     <div class="projects__wrapper">
-    {% assign sortedfeatured = site.data.featured | sort %}
-    {% for featured_hash in sortedfeatured %}
-    {% assign featured = featured_hash[1] %}
-        <div class="projects__card">
-            <div class="projects__image">
-                <img src={{featured.src}} alt={{featured.alt}} onclick="location.href='https://ndmekala.github.io/{{featured.repo}}'">
-            </div>
-            <div class="projects__text">
-                <div class="projects__title">
-                    <h2>{{featured.title}}</h2>
-                </div>
-                <div class="projects__technologies">
-                    {% for technology in featured.technologies %}
-                    <span class="projects__technology">{{technology}}</span>
-                    {% endfor %}
-                    {% for tool in featured.tools %}
-                    <span class="projects__tool">{{tool}}</span>
-                    {% endfor %}
-                </div>
-                <div class="projects__description">
-                    {{featured.description | markdownify}}
-                </div>
-                <div class="projects__links">
-                    <a href="https://ndmekala.github.io/{{featured.repo}}"><button>Preview</button></a>
-                    <a href="https://www.github.com/ndmekala/{{featured.repo}}"><button>Repository</button></a>
-                </div>
-            </div>
-        </div>
-    {% endfor %}
     {% assign sortedprojects = site.data.projects | sort %}
     {% for project_hash in sortedprojects %}
     {% assign project = project_hash[1] %}
-        <div class="projects__card {% unless project.featured %} projects__hidden {% endunless %}">
+        {% if project.featured %}
+        <div class="project__card">
+        {% else %}
+        <div class="project__card projects__hidden">
+        {% endif %}
             <div class="projects__image">
                 <img src={{project.src}} alt={{project.alt}} onclick="location.href='https://ndmekala.github.io/{{project.repo}}'">
             </div>

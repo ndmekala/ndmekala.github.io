@@ -1,5 +1,6 @@
 ---
 layout: post
+category: garden
 title: "Are Programmers Lazy?"
 ---
 Programmers often say that they are lazy. When they say this, they mean that they would rather invent (or discover) a solution that cuts out grunt work than do the same tasks over and over.
