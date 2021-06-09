@@ -34,9 +34,9 @@ h1 { color: #924616; text-transform: uppercase; letter-spacing: 0.1875rem; font-
 
 h2 { margin-top: 0.1875rem; color: #326754; font-size: 1.5rem; }
 
-p { color: #4d4d4d; font-weight: 400; line-height: 1.4; font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif; font-size: 1.0625rem; margin-top: 0; }
+p, ul, li { color: #4d4d4d; font-weight: 400; line-height: 1.4; font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif; font-size: 1.0625rem; margin-top: 0; }
 
-@media (min-width: 40em) { p { font-size: 1.5rem; } }
+@media (min-width: 40em) { p, ul, li { font-size: 1.5rem; } }
 
 ::selection { background: #f3c9af; }
 
@@ -196,7 +196,11 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .footer__social svg:hover { fill: #924616; }
 
-.about__container { margin: 7.5rem auto 0 auto; max-width: 55rem; padding: 1rem 1rem; max-width: 55rem; }
+.about__container { margin: 4rem auto 0 auto; max-width: 55rem; padding: 1rem 1rem; max-width: 55rem; }
+
+@media (min-width: 40em) { .about__container { margin-top: 5.25rem; } }
+
+@media (min-width: 87.5em) { .about__container { margin-top: 7.5rem; } }
 
 .about h1 { display: none; }
 
@@ -220,8 +224,16 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 @media (min-width: 40em) { .post h1 { font-size: 2.25rem; } }
 
-.post__article { margin-top: 6.25rem; }
+.post__article { margin-top: 4rem; }
 
-.post__date { font-style: italic; margin: 0 0 3rem 0; color: #326754; font-size: 1.0625rem; text-align: center; }
+@media (min-width: 40em) { .post__article { margin-top: 5rem; } }
+
+@media (min-width: 87.5em) { .post__article { margin-top: 6.25rem; } }
+
+.post__date { font-style: italic; margin: 0 0 1rem 0; color: #326754; font-size: 1.0625rem; text-align: center; }
+
+@media (min-width: 40em) { .post__date { margin-bottom: 1.75rem; } }
+
+@media (min-width: 87.5em) { .post__date { margin-bottom: 3rem; } }
 
 /*# sourceMappingURL=style.css.map */

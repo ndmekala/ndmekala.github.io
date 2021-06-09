@@ -19,14 +19,30 @@
     }
 
     &__article {
-        margin-top: 6.25rem;
+        margin-top: 4rem;
+
+        @include breakpoint-up(medium) {
+            margin-top: 5rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            margin-top: 6.25rem;
+        }
     }
 
     &__date {
         font-style: italic;
-        margin: 0 0 3rem 0;
+        margin: 0 0 1rem 0;
         color: $green;
         font-size: $font-md;
         text-align: center;
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 1.75rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            margin-bottom: 3rem;
+        }
     }
 }

@@ -1,5 +1,5 @@
 ---
-layout: thankyou
+layout: message
 title: Thank You!
 permalink: /thankyou/
 ---
