@@ -35,9 +35,9 @@ layout: default
     {% for project_hash in sortedprojects %}
     {% assign project = project_hash[1] %}
         {% if project.featured %}
-        <div class="project__card">
+        <div class="projects__card">
         {% else %}
-        <div class="project__card projects__hidden">
+        <div class="projects__card projects__hidden">
         {% endif %}
             <div class="projects__image">
                 <img src={{project.src}} alt={{project.alt}} onclick="location.href='https://ndmekala.github.io/{{project.repo}}'">
