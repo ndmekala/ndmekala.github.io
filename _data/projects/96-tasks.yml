@@ -5,3 +5,4 @@ title: Tasks
 technologies: [JS, HTML, CSS3]
 tools: []
 description: A task management app that exports tasks to [Things 3](https://culturedcode.com/things) via JSON.
+featured: false

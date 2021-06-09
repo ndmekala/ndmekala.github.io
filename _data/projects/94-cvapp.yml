@@ -5,3 +5,4 @@ title: CV App
 technologies: [React.js]
 tools: [Bootstrap]
 description: Generates a CV based on form data supplied by the user.
+featured: true

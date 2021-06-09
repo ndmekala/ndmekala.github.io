@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="navigation__wrapper">
-        <nav class="navigation container">
+        <nav class="navigation__navbar">
             <div class="navigation__links">
                 <a href="https://www.meka.la/">Home</a>
                 <a href="https://www.linkedin.com/in/nirmal-mekala-87841b83/">LinkedIn</a>
@@ -36,11 +36,15 @@
                 <span></span>
                 <span></span>
             </div>
+            <div class="navigation__graphic">
+                N
+            </div>
         </nav>
     </div>
     <main>
-        <article class="post container">
+        <article class="post__article container">
             <h1>{{page.title}}</h1>
+            <p class="post__date">{{page.date | date_to_long_string}}</p>
             {{content}}
         </article>
     </main>

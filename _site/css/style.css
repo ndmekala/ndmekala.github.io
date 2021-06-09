@@ -60,9 +60,19 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .container { padding: 1rem 1rem; max-width: 55rem; margin: 0 auto; }
 
-.navigation { display: flex; justify-content: flex-end; padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.navigation__wrapper { background-color: #ffffff; width: 100%; top: 0; border-bottom: 1px solid #f2f2f2; position: absolute; }
 
-.navigation__wrapper { background-color: #ffffff; width: 100%; top: 0; }
+.navigation__navbar { display: flex; justify-content: flex-end; padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+.navigation__graphic { display: block; color: #ffffff; background-color: #924616; font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif; font-size: 1.5rem; position: absolute; width: 3rem; height: 3rem; border-radius: 1.5rem; padding-left: 1rem; padding-top: 0.625rem; left: calc(50vw - 2rem); bottom: 0.5rem; }
+
+@media (min-width: 40em) { .navigation__graphic { width: 3.75rem; height: 3.75rem; border-radius: 2rem; font-size: 2.25rem; padding-left: 1.125rem; padding-top: 0.625rem; bottom: 0.25rem; left: 1rem; } }
+
+@media (min-width: 64em) { .navigation__graphic { left: calc(50vw - 30rem); } }
+
+@media (min-width: 87.5em) { .navigation__graphic { font-size: 4rem; height: 6rem; width: 6rem; padding-top: 0.75rem; padding-left: 1.5rem; border-radius: 3rem; bottom: -3rem; left: calc(50vw - 34.375rem); } }
+
+.navigation__hamburger { margin-right: 1rem; }
 
 .navigation__hamburger > span { transition: all 200ms ease-in-out; display: block; width: 1.875rem; height: 0.125rem; background-color: #4d4d4d; }
 
@@ -72,13 +82,17 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .navigation__links { display: none; }
 
-.navigation__links a, .navigation__links a:visited { text-transform: uppercase; letter-spacing: .125rem; font-size: 0.8125rem; color: #4d4d4d; }
+.navigation__links a, .navigation__links a:visited { text-transform: uppercase; letter-spacing: .125rem; font-size: 0.8125rem; color: #924616; }
 
 .navigation__links a:not(:last-child), .navigation__links a:visited:not(:last-child) { margin-right: 1.5rem; }
 
 .navigation__links a:hover { color: #f3c9af; }
 
-@media (min-width: 40em) { .navigation__links { display: inline-block; } }
+@media (min-width: 40em) { .navigation__links { display: inline-block; margin-right: 1rem; } }
+
+@media (min-width: 64em) { .navigation__links { margin-right: calc(50vw - 30rem); } }
+
+@media (min-width: 87.5em) { .navigation__links { margin-right: calc(50vw - 34.375rem); } }
 
 .navigation__menu a, .navigation__menu a:visited { text-transform: uppercase; letter-spacing: .125rem; font-size: 1.5rem; color: #924616; display: block; text-align: center; margin-top: 2rem; margin-bottom: 2rem; }
 
@@ -152,7 +166,7 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .skills__tool { background-color: #924616; color: #f2f2f2; border: none; }
 
-.footer { background-color: #ffffff; }
+.footer { background-color: #f2f2f2; }
 
 .footer__box { display: flex; position: relative; flex-wrap: wrap; }
 
@@ -182,7 +196,7 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .footer__social svg:hover { fill: #924616; }
 
-.about { margin-top: 1rem; }
+.about__container { margin: 7.5rem auto 0 auto; max-width: 55rem; padding: 1rem 1rem; max-width: 55rem; }
 
 .about h1 { display: none; }
 
@@ -200,10 +214,14 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 @media (min-width: 40em) { .contact__wrapper { border: 1px solid #924616; padding: 2.5rem 0; } .contact__form { width: 75vw; } }
 
-.post { margin-top: 5rem; }
-
 .post body { background-color: #f2f2f2; }
 
-.post h1 { text-transform: none; letter-spacing: 0; font-weight: 700; margin: 0 0 1.75rem 0; margin-top: 0.1875rem; color: #326754; font-size: 2.25rem; }
+.post h1 { font-size: 1.5rem; text-transform: none; letter-spacing: 0; text-align: center; font-weight: 700; margin: 0.1875rem 0 0.625rem 0; color: #326754; }
+
+@media (min-width: 40em) { .post h1 { font-size: 2.25rem; } }
+
+.post__article { margin-top: 6.25rem; }
+
+.post__date { font-style: italic; margin: 0 0 3rem 0; color: #326754; font-size: 1.0625rem; text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

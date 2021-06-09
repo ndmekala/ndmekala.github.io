@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="navigation__wrapper">
-        <nav class="navigation container">
+        <nav class="navigation__navbar">
             <div class="navigation__links">
                 <a href="https://www.meka.la/">Home</a>
                 <a href="https://www.linkedin.com/in/nirmal-mekala-87841b83/">LinkedIn</a>
@@ -30,11 +30,14 @@
                 <span></span>
                 <span></span>
             </div>
+            <div class="navigation__graphic">
+                N
+            </div>
         </nav>
     </div>
     <main>
-        <section class="about container">
-    <h1 id="about">About</h1>
+        <section class="about__container">
+    <h1 id="about" style="display: none">About</h1>
     <p class="about__standout">Hi there! I’m <strong>Nirmal Mekala</strong>.👋🏾</p>
     <p><strong>I’m a self-taught, front-end React developer</strong> with a background in education and the humanities. I’m particularly interested in creating clean, responsive, user-centered designs. I dove head first into web development because, as <a href="https://thesweetsetup.com/apps/best-text-editor-macos/">one</a> developer put it, <strong>“I realized that I enjoyed writing for computers as much as I did for people.”</strong> I find programming exhilarating because it allows me to apply the organized, innovative thinking that made me an effective writer.</p>
     <p>Take a look at my work below! And feel free to send me a message; I’d love to <a href="#contact">connect.</a></p>
@@ -62,7 +65,9 @@
     
     
     
-        <div class="projects__card">
+    
+    
+        <div class="projects__card ">
             <div class="projects__image">
                 <img src=../assets/images/memory.gif alt=Queen’s Gambit Memory Game app preview onclick="location.href='https://ndmekala.github.io/memory'">
             </div>
@@ -90,7 +95,7 @@
         </div>
     
     
-        <div class="projects__card">
+        <div class="projects__card ">
             <div class="projects__image">
                 <img src=../assets/images/cv.gif alt=CV App preview onclick="location.href='https://ndmekala.github.io/cvapp'">
             </div>
@@ -118,7 +123,7 @@
         </div>
     
     
-        <div class="projects__card">
+        <div class="projects__card ">
             <div class="projects__image">
                 <img src=../assets/images/personal.gif alt=Portfolio preview onclick="location.href='https://ndmekala.github.io/ndmekala.github.io'">
             </div>
@@ -137,7 +142,7 @@
                     
                 </div>
                 <div class="projects__description">
-                    <p>Built from scratch, this portfolio focuses on responsive design and best practices. You can <a href="https://ndmekala.github.io/2021/05/23/are-programmers-lazy">read</a> about how I thought through a recent refactor.</p>
+                    <p>Built from scratch, this portfolio focuses on responsive design and best practices. You can <a href="https://ndmekala.github.io/2021/are-programmers-lazy">read</a> about how I thought through a recent refactor.</p>
 
                 </div>
                 <div class="projects__links">
@@ -148,39 +153,7 @@
         </div>
     
     
-    
-    
-        <div class="projects__card projects__hidden">
-            <div class="projects__image">
-                <img src=../assets/images/weather.gif alt=OpenWeather App preview onclick="location.href='https://ndmekala.github.io/weather'">
-            </div>
-            <div class="projects__text">
-                <div class="projects__title">
-                    <h2>OpenWeather App</h2>
-                </div>
-                <div class="projects__technologies">
-                    
-                    <span class="projects__technology">JS</span>
-                    
-                    <span class="projects__technology">HTML5</span>
-                    
-                    <span class="projects__technology">CSS3</span>
-                    
-                    
-                </div>
-                <div class="projects__description">
-                    <p>An app that consumes the <a href="https://openweathermap.org/">OpenWeather</a> API to display a given city’s forecast.</p>
-
-                </div>
-                <div class="projects__links">
-                    <a href="https://ndmekala.github.io/weather"><button>Preview</button></a>
-                    <a href="https://www.github.com/ndmekala/weather"><button>Repository</button></a>
-                </div>
-            </div>
-        </div>
-    
-    
-        <div class="projects__card projects__hidden">
+        <div class="projects__card  projects__hidden ">
             <div class="projects__image">
                 <img src=../assets/images/tasks.gif alt=Tasks app preview onclick="location.href='https://ndmekala.github.io/todo'">
             </div>
@@ -210,7 +183,37 @@
         </div>
     
     
-        <div class="projects__card projects__hidden">
+        <div class="projects__card  projects__hidden ">
+            <div class="projects__image">
+                <img src=../assets/images/weather.gif alt=OpenWeather App preview onclick="location.href='https://ndmekala.github.io/weather'">
+            </div>
+            <div class="projects__text">
+                <div class="projects__title">
+                    <h2>OpenWeather App</h2>
+                </div>
+                <div class="projects__technologies">
+                    
+                    <span class="projects__technology">JS</span>
+                    
+                    <span class="projects__technology">HTML5</span>
+                    
+                    <span class="projects__technology">CSS3</span>
+                    
+                    
+                </div>
+                <div class="projects__description">
+                    <p>An app that consumes the <a href="https://openweathermap.org/">OpenWeather</a> API to display a given city’s forecast.</p>
+
+                </div>
+                <div class="projects__links">
+                    <a href="https://ndmekala.github.io/weather"><button>Preview</button></a>
+                    <a href="https://www.github.com/ndmekala/weather"><button>Repository</button></a>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="projects__card  projects__hidden ">
             <div class="projects__image">
                 <img src=../assets/images/calc.gif alt=Responsive Calculator app preview onclick="location.href='https://ndmekala.github.io/calculator'">
             </div>
@@ -240,7 +243,7 @@
         </div>
     
     
-        <div class="projects__card projects__hidden">
+        <div class="projects__card  projects__hidden ">
             <div class="projects__image">
                 <img src=../assets/images/etch.gif alt=Pixel Draw app preview onclick="location.href='https://ndmekala.github.io/etch-a-sketch'">
             </div>

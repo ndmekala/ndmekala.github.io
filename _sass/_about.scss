@@ -1,6 +1,11 @@
 .about {
 
-    margin-top: 1rem;
+    &__container {
+        margin: 7.5rem auto 0 auto;
+        max-width: 55rem;
+        padding: 1rem 1rem;
+        max-width: 55rem;
+    }
 
     h1 {
         display: none;

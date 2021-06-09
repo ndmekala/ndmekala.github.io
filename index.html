@@ -5,8 +5,8 @@
 layout: default
 ---
 
-<section class="about container">
-    <h1 id="about">About</h1>
+<section class="about__container">
+    <h1 id="about" style="display: none">About</h1>
     <p class="about__standout">Hi there! I’m <strong>Nirmal Mekala</strong>.👋🏾</p>
     <p><strong>I’m a self-taught, front-end React developer</strong> with a background in education and the humanities. I’m particularly interested in creating clean, responsive, user-centered designs. I dove head first into web development because, as <a href="https://thesweetsetup.com/apps/best-text-editor-macos/">one</a> developer put it, <strong>“I realized that I enjoyed writing for computers as much as I did for people.”</strong> I find programming exhilarating because it allows me to apply the organized, innovative thinking that made me an effective writer.</p>
     <p>Take a look at my work below! And feel free to send me a message; I’d love to <a href="#contact">connect.</a></p>
@@ -63,7 +63,7 @@ layout: default
     {% assign sortedprojects = site.data.projects | sort %}
     {% for project_hash in sortedprojects %}
     {% assign project = project_hash[1] %}
-        <div class="projects__card projects__hidden">
+        <div class="projects__card {% unless project.featured %} projects__hidden {% endunless %}">
             <div class="projects__image">
                 <img src={{project.src}} alt={{project.alt}} onclick="location.href='https://ndmekala.github.io/{{project.repo}}'">
             </div>

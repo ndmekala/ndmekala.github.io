@@ -4,14 +4,62 @@
         background-color: $white;
         width: 100%;
         top: 0;
+        border-bottom: 1px solid $lightGray;
+        position: absolute;
     }
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
 
+    &__navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &__graphic {
+        display: block;
+        color: $white;
+        background-color: $rust;
+        font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif;
+        font-size: $font-lg;
+        position: absolute;
+
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        padding-left: 1rem;
+        padding-top: 0.625rem;
+        left: calc(50vw - 2rem);
+        bottom: 0.5rem;
+
+        @include breakpoint-up(medium) {
+            width: 3.75rem;
+            height: 3.75rem;
+            border-radius: 2rem;
+            font-size: $font-xlg;
+            padding-left: 1.125rem;
+            padding-top: 0.625rem;
+            bottom: 0.25rem;
+            left: 1rem;
+        }
+
+        @include breakpoint-up(large) {
+            left: calc(50vw - 30rem);
+        }
+       
+        @include breakpoint-up(xlarge) {
+            font-size: $font-huge;
+            height: 6rem;
+            width: 6rem;
+            padding-top: 0.75rem;
+            padding-left: 1.5rem;
+            border-radius: 3rem;
+            bottom: -3rem;
+            left: calc(50vw - 34.375rem);
+        }
+    }
 
     &__hamburger {
+        margin-right: 1rem;
         
         > span {
             transition: all 200ms ease-in-out;
@@ -36,7 +84,7 @@
             text-transform: uppercase;
             letter-spacing: .125rem;
             font-size: $font-sm;
-            color: $mediumGray;
+            color: $rust;
             &:not(:last-child) {
                 margin-right: 1.5rem;
             }
@@ -48,6 +96,15 @@
 
         @include breakpoint-up(medium) {
             display: inline-block;
+            margin-right: 1rem;
+        }
+
+        @include breakpoint-up(large) {
+            margin-right: calc(50vw - 30rem)
+        }
+
+        @include breakpoint-up(xlarge) {
+            margin-right: calc(50vw - 34.375rem)
         }
     }
 

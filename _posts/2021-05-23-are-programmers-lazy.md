@@ -2,7 +2,7 @@
 layout: post
 title: "Are Programmers Lazy?"
 ---
-Programmers often say that they are lazy. When they say this, they mean that they would rather invent a (or discover) a solution that cuts out grunt work than do the same tasks over and over.
+Programmers often say that they are lazy. When they say this, they mean that they would rather invent (or discover) a solution that cuts out grunt work than do the same tasks over and over.
 
 I think there’s a clearer way to frame it. Good programmers are lazy with respect to *grunt* work, but marked by diligence when it comes to the *mental* work of refactoring and eliminating redundancy.
 

@@ -5,3 +5,4 @@ title: OpenWeather App
 technologies: [JS, HTML5, CSS3]
 tools: []
 description: An app that consumes the [OpenWeather](https://openweathermap.org/) API to display a given city’s forecast.
+featured: false
