@@ -20,6 +20,7 @@
 
     &__article {
         margin-top: 4rem;
+        min-height: 95vh;
 
         @include breakpoint-up(medium) {
             margin-top: 5rem;

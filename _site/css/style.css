@@ -224,7 +224,7 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 @media (min-width: 40em) { .post h1 { font-size: 2.25rem; } }
 
-.post__article { margin-top: 4rem; }
+.post__article { margin-top: 4rem; min-height: 95vh; }
 
 @media (min-width: 40em) { .post__article { margin-top: 5rem; } }
 
