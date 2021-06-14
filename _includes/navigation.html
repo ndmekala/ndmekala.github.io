@@ -1,16 +1,16 @@
 <div class="navigation__overlay">
     <div class="navigation__menu">
-        <a href="https://www.meka.la/">Home</a>
-        <a href="https://www.linkedin.com/in/nirmal-mekala-87841b83/">LinkedIn</a>
-        <a href="https://github.com/ndmekala">GitHub</a>
+        {% for link in site.data.navlinks %}
+        <a href={{link.url}}>{{link.text}}</a>
+        {% endfor %}
     </div>
 </div>
 <div class="navigation__wrapper">
     <nav class="navigation__navbar">
         <div class="navigation__links">
-            <a href="https://www.meka.la/">Home</a>
-            <a href="https://www.linkedin.com/in/nirmal-mekala-87841b83/">LinkedIn</a>
-            <a href="https://github.com/ndmekala">GitHub</a>
+            {% for link in site.data.navlinks %}
+            <a href={{link.url}}>{{link.text}}</a>
+            {% endfor %}
         </div>
         <div class="navigation__hamburger">
             <span></span>

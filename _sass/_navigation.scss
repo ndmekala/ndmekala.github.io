@@ -4,8 +4,11 @@
         background-color: $white;
         width: 100%;
         top: 0;
-        border-bottom: 1px solid $lightGray;
         position: absolute;
+
+        @include breakpoint-up(medium) {
+            border-bottom: 1px solid $lightGray;
+        }
     }
 
     &__navbar {
@@ -66,7 +69,7 @@
             display: block;
             width: 1.875rem;
             height: 0.125rem;
-            background-color: $mediumGray;
+            background-color: $rust;
             &:not(:last-child) {
                 margin-bottom: 0.25rem;
             }

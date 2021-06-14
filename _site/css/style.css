@@ -60,7 +60,9 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .container { padding: 1rem 1rem; max-width: 55rem; margin: 0 auto; }
 
-.navigation__wrapper { background-color: #ffffff; width: 100%; top: 0; border-bottom: 1px solid #f2f2f2; position: absolute; }
+.navigation__wrapper { background-color: #ffffff; width: 100%; top: 0; position: absolute; }
+
+@media (min-width: 40em) { .navigation__wrapper { border-bottom: 1px solid #f2f2f2; } }
 
 .navigation__navbar { display: flex; justify-content: flex-end; padding-top: 1.5rem; padding-bottom: 1.5rem; }
 
@@ -74,7 +76,7 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .navigation__hamburger { margin-right: 1rem; }
 
-.navigation__hamburger > span { transition: all 200ms ease-in-out; display: block; width: 1.875rem; height: 0.125rem; background-color: #4d4d4d; }
+.navigation__hamburger > span { transition: all 200ms ease-in-out; display: block; width: 1.875rem; height: 0.125rem; background-color: #924616; }
 
 .navigation__hamburger > span:not(:last-child) { margin-bottom: 0.25rem; }
 
