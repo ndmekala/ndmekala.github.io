@@ -32,6 +32,7 @@
             box-shadow: 0rem 0.1875rem 0.75rem rgba(0,0,0,0.15);
             border-radius: 1rem;
             transition: all 200ms ease-in-out;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.05);

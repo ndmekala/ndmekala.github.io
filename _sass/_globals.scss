@@ -90,6 +90,7 @@ button {
     color: $lightGray;
     border-radius: 1.375rem;
     transition: all 200ms ease-in-out;
+    cursor: pointer;
     
     &:hover {
         background-color: $lightGreen;
