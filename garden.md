@@ -16,7 +16,8 @@ And at the same time, no garden is perfect. Weeds grow incessantly. Any order is
 So with this digital garden: the goal isn’t perfection. It’s thoughtful cultivation of knowledge toward true cognitive *growth*.
 
 Now you know why you’re here. *Enjoy your stroll through the garden 🌿.* Below you’ll find a curated (not chronological) list of articles (and snippets) I’ve written. I hope this mental exercise of mine provides value for you.
-
+## Information on Specific Technologies
+* [GraphQL from 10,000 Feet](https://www.meka.la/garden/graphql-10000ft)
 ## Habits of the Mind for Coding
 * [Are Programmers Lazy? 🧐](https://www.meka.la/garden/are-programmers-lazy)
 * [I Believe in Programming Principles 🧠](https://www.meka.la/garden/programming-principles-language-skills)
