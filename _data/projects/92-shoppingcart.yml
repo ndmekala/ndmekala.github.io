@@ -1,0 +1,8 @@
+repo: shopping-cart-2
+src: ../assets/images/cart.gif
+alt: Shopping Cart app preview
+title: Shopping Cart
+technologies: [React.js, Node.js]
+tools: [Bootstrap]
+description: This app pulls item data from the Etsy API, navigates with React-Router, and keeps track of your cart in state.
+featured: true
