@@ -1,0 +1,24 @@
+---
+
+---
+
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+    <title>{{page.title}}</title>
+</head>
+<body class="post">
+    {% include navigation.html %}
+    <main>
+        <article class="post__article container">
+            {{content}}
+        </article>
+    </main>
+    {% include footer.html %}
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

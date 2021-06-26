@@ -1,0 +1,120 @@
+---
+layout: bare-post
+title: Institute for Justice
+categories: other
+---
+<h1>A Letter to the Institute for Justice</h1>
+
+<p><em>[VIDEO]</em></p>
+
+<h2>Rationale</h2>
+
+<p>The homepage of the Institute for Justice does a great job of drawing users in to the important work IJ is doing. You immediately see faces and you get the message: “This place is helping <em>real</em> people!”</p>
+
+<p>But once you start to navigate the page, things get a little tricky. The “Support IJ,” “Give Now,” and “Report Abuse” buttons all compete for your attention. Then when you hover your mouse over the buttons, you get surprising interactions—“Give Now” nearly disappears against the dark background and the hamburger menu suddenly flashes a new color scheme.</p>
+
+<h2>Proposal</h2>
+
+<p>I opted to create a new navigation bar. By making it a dark but translucent color you can make the logo pop without losing the hero image. The user’s eye is drawn to the “Give Now” button with a color pop, but they can still see the “Report Abuse” button clearly. Users are still able to visit the “Support IJ” menu item below the hero image without it competing with the main giving link.</p>
+
+<div class="post__content-wrapper">
+	<div class="post__w-80">
+		<figure class="post__figure-w-100">
+			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-before.png" alt="Institute for Justice website before changes">
+			<figcaption>Before changes</figcaption>
+		</figure>
+	</div>
+</div>
+<div class="post__content-wrapper">
+	<div class="post__w-80">
+		<figure class="post__figure-w-100">
+			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-after.png" alt="Institute for Justice website after changes">
+			<figcaption>After changes</figcaption>
+		</figure>
+	</div>
+</div>
+
+<p>Then, instead of changing colors or adding borders around icons, the site can respond to user’s hover action with an elegant animation of the button or icon.</p>
+
+<div class="post__content-wrapper">
+	<div>
+		<figure>
+			<img src="/assets/images/institute-for-justice/ij-nav-before.gif" alt="Institute for Justice navigation bar before changes">
+			<figcaption>Before changes</figcaption>
+		</figure>
+	</div>
+</div>
+<div class="post__content-wrapper">
+	<div>
+		<figure>
+			<img src="/assets/images/institute-for-justice/ij-nav-after.gif" alt="Institute for Justice navigation bar after changes">
+			<figcaption>After changes</figcaption>
+		</figure>
+	</div>
+</div>
+
+<p>These improvements to the functionality and usability of the site can be made with just a few lines of CSS. You can view all the code used for these changes below.</p>
+
+{% highlight css %}
+
+/* Adding a dark, transluscent navigation header background */
+.re-menu-container {
+	background-color: rgb(0, 0, 0, 0.6);
+}
+
+/* Adjusting colors and hover animations on individual menu items */
+.re-menu-box {
+	transition: all 200ms ease-in-out
+}
+.re-menu-box:hover {
+	background-color: transparent;
+	color: white;
+	transform: translateY(-5px)
+}
+
+.re-menu-search {
+	background-color: transparent;
+	border: 0px solid black;
+	transition: all 200ms ease-in-out;
+}
+.re-menu-search:hover {
+	transform: translateY(-5px)
+}
+
+.re-menu-donate {
+	background-color: #10757b;
+	border: 3px solid #10757b;
+	transition: all 200ms ease-in-out;
+	letter-spacing: 2px;
+}
+
+.re-menu-report-abuse {
+	background-color: transparent;
+	border: 0px solid black;
+	transition: all 200ms ease-in-out;
+	letter-spacing: 2px;
+}
+
+.re-menu-report-abuse:hover {
+	transform: translateY(-5px);
+}
+
+/* Removing special coloring on the "Support IJ" button */
+/* (This is not currently a class on the website) */
+.support-ij {
+	background-color: #000000;
+	color: #FFFFFF;
+	border-right: 1px solid #393939
+}
+{% endhighlight %}
+
+
+<h2>Conclusion</h2>
+
+<p>I believe these changes can provide real value for the end user and improve the website. And while these suggestions are primarily aesthetic in nature, they demonstrate the conscientious problem-solving ability that I apply across the web development stack.</p>
+
+<p>Thank you for taking the time to read this note. I look forward to hearing from you.</p>
+
+<p>Best,</p>
+
+<p>Nirmal Mekala</p>

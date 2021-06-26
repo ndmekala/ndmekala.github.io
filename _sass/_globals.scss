@@ -4,7 +4,7 @@ html { font-family: 'Inter', Arial, Helvetica, sans-serif; }
   html { font-family: 'Inter var', Arial, Helvetica, sans-serif; }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap');
 
 
 
@@ -55,6 +55,25 @@ p, ul, li {
     @include breakpoint-up(medium) {
         font-size: $font-lg;
     };
+}
+
+figure {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+figcaption {
+    color: $rust;
+    font-weight: 400;
+    font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif;
+    font-size: $font-md;
+}
+
+code {
+    font-size: $font-md;
+    overflow-wrap: break-word;
+    font-family: 'Source Code Pro', 'Courier', monospace;
+    font-weight: 400;
 }
 
 ::selection {

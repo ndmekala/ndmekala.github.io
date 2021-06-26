@@ -76,6 +76,7 @@
 
     &__technology {
         font-family: 'Source Code Pro', 'Courier', monospace;
+        font-weight: 300;
         padding: 0.25rem;
         background-color: $lightGreen;
         border-radius: 0.3125rem;
@@ -89,6 +90,7 @@
 
     &__tool {
         font-family: 'Source Code Pro', 'Courier', monospace;
+        font-weight: 300;
         padding: 0.25rem;
         background-color: $lightRust;
         border-radius: 0.3125rem;
