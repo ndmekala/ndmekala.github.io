@@ -37,17 +37,17 @@ categories: other
 <p>Then, instead of changing colors or adding borders around icons, the site can respond to user’s hover action with an elegant animation of the button or icon.</p>
 
 <div class="post__content-wrapper">
-	<div>
-		<figure>
-			<img src="/assets/images/institute-for-justice/ij-nav-before.gif" alt="Institute for Justice navigation bar before changes">
+	<div class="post__w-80">
+		<figure class="post__figure-w-100">
+			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-nav-before.gif" alt="Institute for Justice navigation bar before changes">
 			<figcaption>Before changes</figcaption>
 		</figure>
 	</div>
 </div>
 <div class="post__content-wrapper">
-	<div>
-		<figure>
-			<img src="/assets/images/institute-for-justice/ij-nav-after.gif" alt="Institute for Justice navigation bar after changes">
+	<div class="post__w-80">
+		<figure >
+			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-nav-after.gif" alt="Institute for Justice navigation bar after changes">
 			<figcaption>After changes</figcaption>
 		</figure>
 	</div>
@@ -57,12 +57,12 @@ categories: other
 
 {% highlight css %}
 
-/* Adding a dark, transluscent navigation header background */
+/* Adding a dark, transluscent nav background */
 .re-menu-container {
 	background-color: rgb(0, 0, 0, 0.6);
 }
 
-/* Adjusting colors and hover animations on individual menu items */
+/* Adjusting colors and hover animations on menu items */
 .re-menu-box {
 	transition: all 200ms ease-in-out
 }
@@ -99,7 +99,7 @@ categories: other
 	transform: translateY(-5px);
 }
 
-/* Removing special coloring on the "Support IJ" button */
+/* Changing colors on the "Support IJ" button */
 /* (This is not currently a class on the website) */
 .support-ij {
 	background-color: #000000;

@@ -40,9 +40,13 @@ p, ul, li { color: #4d4d4d; font-weight: 400; line-height: 1.4; font-family: 'So
 
 figure { margin-right: 0; margin-left: 0; }
 
-figcaption { color: #924616; font-weight: 400; font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif; font-size: 1.0625rem; }
+figcaption { color: #924616; font-weight: 400; font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif; font-size: 0.8125rem; }
 
-code { font-size: 1.0625rem; overflow-wrap: break-word; font-family: 'Source Code Pro', 'Courier', monospace; font-weight: 400; }
+@media (min-width: 40em) { figcaption { font-size: 1.0625rem; } }
+
+code { font-size: 0.8125rem; overflow-wrap: break-word; font-family: 'Source Code Pro', 'Courier', monospace; font-weight: 400; }
+
+@media (min-width: 40em) { code { font-size: 1.0625rem; } }
 
 ::selection { background: #f3c9af; }
 

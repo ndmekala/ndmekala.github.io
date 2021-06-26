@@ -66,14 +66,20 @@ figcaption {
     color: $rust;
     font-weight: 400;
     font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif;
-    font-size: $font-md;
+    font-size: $font-sm;
+    @include breakpoint-up(medium) {
+        font-size: $font-md;
+    };
 }
 
 code {
-    font-size: $font-md;
+    font-size: $font-sm;
     overflow-wrap: break-word;
     font-family: 'Source Code Pro', 'Courier', monospace;
     font-weight: 400;
+    @include breakpoint-up(medium) {
+        font-size: $font-md;
+    };
 }
 
 ::selection {

@@ -85,17 +85,17 @@
 <p>Then, instead of changing colors or adding borders around icons, the site can respond to user’s hover action with an elegant animation of the button or icon.</p>
 
 <div class="post__content-wrapper">
-	<div>
-		<figure>
-			<img src="/assets/images/institute-for-justice/ij-nav-before.gif" alt="Institute for Justice navigation bar before changes">
+	<div class="post__w-80">
+		<figure class="post__figure-w-100">
+			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-nav-before.gif" alt="Institute for Justice navigation bar before changes">
 			<figcaption>Before changes</figcaption>
 		</figure>
 	</div>
 </div>
 <div class="post__content-wrapper">
-	<div>
-		<figure>
-			<img src="/assets/images/institute-for-justice/ij-nav-after.gif" alt="Institute for Justice navigation bar after changes">
+	<div class="post__w-80">
+		<figure >
+			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-nav-after.gif" alt="Institute for Justice navigation bar after changes">
 			<figcaption>After changes</figcaption>
 		</figure>
 	</div>
@@ -103,12 +103,12 @@
 
 <p>These improvements to the functionality and usability of the site can be made with just a few lines of CSS. You can view all the code used for these changes below.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* Adding a dark, transluscent navigation header background */</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* Adding a dark, transluscent nav background */</span>
 <span class="nc">.re-menu-container</span> <span class="p">{</span>
 	<span class="nl">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.6</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="c">/* Adjusting colors and hover animations on individual menu items */</span>
+<span class="c">/* Adjusting colors and hover animations on menu items */</span>
 <span class="nc">.re-menu-box</span> <span class="p">{</span>
 	<span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">200ms</span> <span class="n">ease-in-out</span>
 <span class="p">}</span>
@@ -145,7 +145,7 @@
 	<span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">-5px</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="c">/* Removing special coloring on the "Support IJ" button */</span>
+<span class="c">/* Changing colors on the "Support IJ" button */</span>
 <span class="c">/* (This is not currently a class on the website) */</span>
 <span class="nc">.support-ij</span> <span class="p">{</span>
 	<span class="nl">background-color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span>
