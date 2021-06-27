@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-26T19:11:37-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Institute for Justice</title><link href="/other/institute-for-justice" rel="alternate" type="text/html" title="Institute for Justice" /><published>2021-06-23T00:00:00-05:00</published><updated>2021-06-23T00:00:00-05:00</updated><id>/other/institute-for-justice</id><content type="html" xml:base="/other/institute-for-justice">&lt;h1&gt;Project for the Institute for Justice&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-26T19:14:50-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Institute for Justice</title><link href="/other/institute-for-justice" rel="alternate" type="text/html" title="Institute for Justice" /><published>2021-06-23T00:00:00-05:00</published><updated>2021-06-23T00:00:00-05:00</updated><id>/other/institute-for-justice</id><content type="html" xml:base="/other/institute-for-justice">&lt;h1&gt;Project for the Institute for Justice&lt;/h1&gt;
 
 &lt;p&gt;&lt;em&gt;[VIDEO]&lt;/em&gt;&lt;/p&gt;
 
@@ -50,7 +50,7 @@
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;You can view all the code used for these changes below. Justa few lines of CSS can help people use the site more easily.&lt;/p&gt;
+&lt;p&gt;You can view all the code used for these changes below. Just a few lines of CSS can help people use the site more easily.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/* Adding a dark, transluscent nav background */&lt;/span&gt;
 &lt;span class=&quot;nc&quot;&gt;.re-menu-container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
