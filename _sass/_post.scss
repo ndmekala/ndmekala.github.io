@@ -44,8 +44,11 @@
         width: 100%;
     }
 
-    &__w-80 {
-        width: 80%
+    &__dw-80-mw-100 {
+        width: 100%;
+        @include breakpoint-up(medium) {
+            width: 80%
+        }
     }
 
     &__date {

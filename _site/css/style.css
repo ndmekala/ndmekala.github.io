@@ -248,7 +248,9 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .post__figure-w-100 { width: 100%; }
 
-.post__w-80 { width: 80%; }
+.post__dw-80-mw-100 { width: 100%; }
+
+@media (min-width: 40em) { .post__dw-80-mw-100 { width: 80%; } }
 
 .post__date { font-style: italic; margin: 0 0 1rem 0; color: #326754; font-size: 1.0625rem; text-align: center; }
 

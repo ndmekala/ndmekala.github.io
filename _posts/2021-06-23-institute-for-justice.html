@@ -3,22 +3,24 @@ layout: bare-post
 title: Institute for Justice
 categories: other
 ---
-<h1>A Letter to the Institute for Justice</h1>
+<h1>Project for the Institute for Justice</h1>
 
 <p><em>[VIDEO]</em></p>
 
 <h2>Rationale</h2>
 
-<p>The homepage of the Institute for Justice does a great job of drawing users in to the important work IJ is doing. You immediately see faces and you get the message: “This place is helping <em>real</em> people!”</p>
+<p>The homepage of the Institute for Justice does a great job of drawing users in to IJ’s important work. You immediately see faces and get the message: “This place is helping <em>real</em> people!”</p>
 
-<p>But once you start to navigate the page, things get a little tricky. The “Support IJ,” “Give Now,” and “Report Abuse” buttons all compete for your attention. Then when you hover your mouse over the buttons, you get surprising interactions—“Give Now” nearly disappears against the dark background and the hamburger menu suddenly flashes a new color scheme.</p>
+<p>But once you start to navigate the page, the user experience gets a little clunky. The “Support IJ,” “Give Now,” and “Report Abuse” buttons all compete for your attention. And when you hover your mouse over these buttons, you get surprising responses—“Give Now” turns dark and the hamburger menu suddenly flashes a new color scheme.</p>
+
+<p>Smoothing out these little bumps in the UX is not just a vanity project. Thoughtful design increases the likelihood of users engaging with calls to action (e.g. the “Give Now” button). Implementing this redesign could increase donations.</p>
 
 <h2>Proposal</h2>
 
-<p>I opted to create a new navigation bar. By making it a dark but translucent color you can make the logo pop without losing the hero image. The user’s eye is drawn to the “Give Now” button with a color pop, but they can still see the “Report Abuse” button clearly. Users are still able to visit the “Support IJ” menu item below the hero image without it competing with the main giving link.</p>
+<p>I created a new navigation bar. By giving it a dark but translucent color, the logo stands out more, but you still see the background image. The user’s eye is drawn to the “Give Now” button by a pop of color, but they can still see the “Report Abuse” and “Support IJ” buttons clearly.</p>
 
 <div class="post__content-wrapper">
-	<div class="post__w-80">
+	<div class="post__dw-80-mw-100">
 		<figure class="post__figure-w-100">
 			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-before.png" alt="Institute for Justice website before changes">
 			<figcaption>Before changes</figcaption>
@@ -26,7 +28,7 @@ categories: other
 	</div>
 </div>
 <div class="post__content-wrapper">
-	<div class="post__w-80">
+	<div class="post__dw-80-mw-100">
 		<figure class="post__figure-w-100">
 			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-after.png" alt="Institute for Justice website after changes">
 			<figcaption>After changes</figcaption>
@@ -37,7 +39,7 @@ categories: other
 <p>Then, instead of changing colors or adding borders around icons, the site can respond to user’s hover action with an elegant animation of the button or icon.</p>
 
 <div class="post__content-wrapper">
-	<div class="post__w-80">
+	<div class="post__dw-80-mw-100">
 		<figure class="post__figure-w-100">
 			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-nav-before.gif" alt="Institute for Justice navigation bar before changes">
 			<figcaption>Before changes</figcaption>
@@ -45,7 +47,7 @@ categories: other
 	</div>
 </div>
 <div class="post__content-wrapper">
-	<div class="post__w-80">
+	<div class="post__dw-80-mw-100">
 		<figure >
 			<img class="post__image-w-100" src="/assets/images/institute-for-justice/ij-nav-after.gif" alt="Institute for Justice navigation bar after changes">
 			<figcaption>After changes</figcaption>
@@ -53,7 +55,7 @@ categories: other
 	</div>
 </div>
 
-<p>These improvements to the functionality and usability of the site can be made with just a few lines of CSS. You can view all the code used for these changes below.</p>
+<p>You can view all the code used for these changes below. Justa few lines of CSS can help people use the site more easily.</p>
 
 {% highlight css %}
 
@@ -87,6 +89,9 @@ categories: other
 	transition: all 200ms ease-in-out;
 	letter-spacing: 2px;
 }
+.re-menu-donate:hover {
+	transform: translateY(-5px);
+}
 
 .re-menu-report-abuse {
 	background-color: transparent;
@@ -94,12 +99,11 @@ categories: other
 	transition: all 200ms ease-in-out;
 	letter-spacing: 2px;
 }
-
 .re-menu-report-abuse:hover {
 	transform: translateY(-5px);
 }
 
-/* Changing colors on the "Support IJ" button */
+/* Changing colors on the “Support IJ” button */
 /* (This is not currently a class on the website) */
 .support-ij {
 	background-color: #000000;
@@ -111,9 +115,9 @@ categories: other
 
 <h2>Conclusion</h2>
 
-<p>I believe these changes can provide real value for the end user and improve the website. And while these suggestions are primarily aesthetic in nature, they demonstrate the conscientious problem-solving ability that I apply across the web development stack.</p>
+<p>I believe these changes can provide real value for the Institute for Justice and have the potential to increase funding. And while these suggestions are related to the front-facing user experience, they demonstrate the conscientious problem-solving that I apply across the web development stack.</p>
 
-<p>Thank you for taking the time to read this note. I look forward to hearing from you.</p>
+<p>Thank you for taking the time to read this note. I look forward to hearing from you!</p>
 
 <p>Best,</p>
 
