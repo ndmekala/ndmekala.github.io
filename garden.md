@@ -18,6 +18,7 @@ So with this digital garden: the goal isn’t perfection. It’s thoughtful cult
 Now you know why you’re here. *Enjoy your stroll through the garden 🌿.* Below you’ll find a curated (not chronological) list of articles (and snippets) I’ve written. I hope this mental exercise of mine provides value for you.
 ## Information on Specific Technologies
 * [GraphQL from 10,000 Feet](https://www.meka.la/garden/graphql-10000ft)
+* [Gatsby from 10,000 Feet](/garden/gatsby-from-10000ft)
 
 ## Habits of the Mind for Coding
 * [Are Programmers Lazy? 🧐](https://www.meka.la/garden/are-programmers-lazy)
