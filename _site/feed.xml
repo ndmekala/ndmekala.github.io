@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-26T19:14:50-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Institute for Justice</title><link href="/other/institute-for-justice" rel="alternate" type="text/html" title="Institute for Justice" /><published>2021-06-23T00:00:00-05:00</published><updated>2021-06-23T00:00:00-05:00</updated><id>/other/institute-for-justice</id><content type="html" xml:base="/other/institute-for-justice">&lt;h1&gt;Project for the Institute for Justice&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-29T16:04:51-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Institute for Justice</title><link href="/other/institute-for-justice" rel="alternate" type="text/html" title="Institute for Justice" /><published>2021-06-23T00:00:00-05:00</published><updated>2021-06-23T00:00:00-05:00</updated><id>/other/institute-for-justice</id><content type="html" xml:base="/other/institute-for-justice">&lt;h1&gt;Project for the Institute for Justice&lt;/h1&gt;
 
-&lt;p&gt;&lt;em&gt;[VIDEO]&lt;/em&gt;&lt;/p&gt;
+&lt;div style=&quot;padding:75% 0 0 0;position:relative;&quot;&gt;
+	&lt;iframe src=&quot;https://player.vimeo.com/video/569088551?badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; title=&quot;IMG_4753.mov&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2&gt;Rationale&lt;/h2&gt;
 
 &lt;p&gt;The homepage of the Institute for Justice does a great job of drawing users in to IJ’s important work. You immediately see faces and get the message: “This place is helping &lt;em&gt;real&lt;/em&gt; people!”&lt;/p&gt;
 
-&lt;p&gt;But once you start to navigate the page, the user experience gets a little clunky. The “Support IJ,” “Give Now,” and “Report Abuse” buttons all compete for your attention. And when you hover your mouse over these buttons, you get surprising responses—“Give Now” turns dark and the hamburger menu suddenly flashes a new color scheme.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But once you start to navigate the page, the user experience gets a little clunky.&lt;/strong&gt; The “Support IJ,” “Give Now,” and “Report Abuse” buttons all compete for your attention. And when you hover your mouse over these buttons, you get surprising responses—“Give Now” turns dark and the hamburger menu suddenly flashes a new color scheme.&lt;/p&gt;
 
-&lt;p&gt;Smoothing out these little bumps in the UX is not just a vanity project. Thoughtful design increases the likelihood of users engaging with calls to action (e.g. the “Give Now” button). Implementing this redesign could increase donations.&lt;/p&gt;
+&lt;p&gt;Smoothing out these little bumps in the UX is not just a vanity project. Thoughtful design increases the likelihood of users engaging with calls to action (e.g. the “Give Now” button). &lt;strong&gt;Implementing this redesign could increase donations.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2&gt;Proposal&lt;/h2&gt;
 
