@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-29T16:04:51-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Institute for Justice</title><link href="/other/institute-for-justice" rel="alternate" type="text/html" title="Institute for Justice" /><published>2021-06-23T00:00:00-05:00</published><updated>2021-06-23T00:00:00-05:00</updated><id>/other/institute-for-justice</id><content type="html" xml:base="/other/institute-for-justice">&lt;h1&gt;Project for the Institute for Justice&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-29T17:45:11-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">What is Gatsby JS?</title><link href="/garden/what-is-gatsby-js" rel="alternate" type="text/html" title="What is Gatsby JS?" /><published>2021-06-29T00:00:00-05:00</published><updated>2021-06-29T00:00:00-05:00</updated><id>/garden/what-is-gatsby-js</id><content type="html" xml:base="/garden/what-is-gatsby-js">&lt;p&gt;These are notes from Zach Gordon’s &lt;a href=&quot;https://www.youtube.com/watch?v=GuvAMcsoreI&quot;&gt;video&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;What?&lt;/strong&gt; Gatsby is a static site generator that runs on your computer with Node.js and generates pre-configured HTML.
+    &lt;ul&gt;
+      &lt;li&gt;It uses GraphQL to get data from anywhere.&lt;/li&gt;
+      &lt;li&gt;It uses React for templating (and CSS for styling).&lt;/li&gt;
+      &lt;li&gt;It has a plugin architecture.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why?&lt;/strong&gt; It’s fast because the HTML is pre-rendered; the server doesn’t need to generate HTML for you after being called.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why?&lt;/strong&gt; It’s secure because hacking the server just means accessing HTML files.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why?&lt;/strong&gt; It offers an appealing modern development stack.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why?&lt;/strong&gt; It has a solid team, an open source community, and solid documentation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;👉🏾 (Personal &lt;strong&gt;why&lt;/strong&gt;) I plan to use it for an upcoming project to take advantage of its Markdown integration, implementation of React, and speed ⚡️.&lt;/p&gt;
+
+&lt;p&gt;🚨 This is whole different world than create-react-app! &lt;a href=&quot;https://reactjs.org/docs/create-a-new-react-app.html&quot;&gt;See more&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="garden" /><summary type="html">These are notes from Zach Gordon’s video.</summary></entry><entry><title type="html">Institute for Justice</title><link href="/other/institute-for-justice" rel="alternate" type="text/html" title="Institute for Justice" /><published>2021-06-23T00:00:00-05:00</published><updated>2021-06-23T00:00:00-05:00</updated><id>/other/institute-for-justice</id><content type="html" xml:base="/other/institute-for-justice">&lt;h1&gt;Project for the Institute for Justice&lt;/h1&gt;
 
 &lt;div style=&quot;padding:75% 0 0 0;position:relative;&quot;&gt;
 	&lt;iframe src=&quot;https://player.vimeo.com/video/569088551?badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; title=&quot;IMG_4753.mov&quot;&gt;&lt;/iframe&gt;
