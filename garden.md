@@ -20,6 +20,6 @@ Now you know why you’re here. *Enjoy your stroll through the garden 🌿.* Bel
 * [GraphQL from 10,000 Feet](https://www.meka.la/garden/graphql-10000ft)
 * [Gatsby from 10,000 Feet](/garden/gatsby-from-10000ft)
 
-## Habits of the Mind for Coding
+## Thinking Like a Programmer
 * [Are Programmers Lazy? 🧐](https://www.meka.la/garden/are-programmers-lazy)
 * [I Believe in Programming Principles 🧠](https://www.meka.la/garden/programming-principles-language-skills)
