@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-07-09T13:33:31-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Gatsby JS from 10,000 Feet</title><link href="/garden/gatsby-from-10000ft" rel="alternate" type="text/html" title="Gatsby JS from 10,000 Feet" /><published>2021-06-29T00:00:00-05:00</published><updated>2021-06-29T00:00:00-05:00</updated><id>/garden/gatsby-from-10000ft</id><content type="html" xml:base="/garden/gatsby-from-10000ft">&lt;p&gt;These are notes from Zach Gordon’s &lt;a href=&quot;https://www.youtube.com/watch?v=GuvAMcsoreI&quot;&gt;video&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-07-09T14:40:27-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">DTN</title><link href="/other/dtn" rel="alternate" type="text/html" title="DTN" /><published>2021-07-09T00:00:00-05:00</published><updated>2021-07-09T00:00:00-05:00</updated><id>/other/dtn</id><content type="html" xml:base="/other/dtn">&lt;h1 id=&quot;project-for-dtn&quot;&gt;Project for DTN&lt;/h1&gt;
+&lt;!--[VIDEO]--&gt;
+&lt;!--Hello! My name is Nirmal Mekala. I recently applied to the Front End React Software Engineer position at DTN. I’m really interested in the role. For one, I recognize that DTN supports industries that are vital to human flourishing including energy and agriculture. Being part of an organization that is upholding vital infrastructure by providing high-accuracy data is really appealing to me. --&gt;
+&lt;!--Beyond that, the specifics of the role really piqued my interest. I love front-end toolchain advertised in the position: development with React, semantic HTML, JavaScript and modern CSS. I also am really excited about JAMStack methodology. I’ve created JAMStack sites. I love the toolchains and just the ability to push front-end development to the boundaries of its functionality. I’ve done some back-end with Node and am eager to grow in those skills.--&gt;
+&lt;!-- I believe that I’m able to add value to DTN in this position. But rather than just *saying* that, I thought it might be good to *show* you. Take a look below at a refactoring of one of DTN’s widgets. It will give you a glimpse into my coding abilities and problem solving skills. Thanks for watching, and I hope to hear back from you soon! --&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;This is a refactoring of DTN News List Widget (an embeddable widget that lists articles from DTN’s Content Services). You can find the original version &lt;a href=&quot;https://cs-widget-docs.dtn.com/news-list-widget/news-list-widget-1.0-latest.html&quot;&gt;here&lt;/a&gt;, in the DTN Content Services documentation.
+I opted to add two levels of functionality. The first solves a problem and the second makes the widget more dynamic.&lt;/p&gt;
+&lt;h2 id=&quot;filling-holes&quot;&gt;Filling Holes&lt;/h2&gt;
+&lt;p&gt;The problem with the widget at present is that the data it pulls from the API doesn’t always include an associated image. This isn’t accounted for in the rendering of the widget, so the appearance of the articles is uneven. There are holes.&lt;/p&gt;
+&lt;div class=&quot;post__content-wrapper&quot;&gt;
+&lt;div class=&quot;post__dw-80-mw-100&quot;&gt;
+		&lt;figure class=&quot;post__figure-w-100&quot;&gt;
+			&lt;img class=&quot;post__image-w-100&quot; src=&quot;/assets/images/dtn/dtn-news-list-widget.png&quot; alt=&quot;DTN widget before changes&quot; /&gt;
+			&lt;figcaption&gt;Before changes&lt;/figcaption&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;I rebuilt this widget and made it a little smarter. It now checks to see if image information exists, and renders a default image if it doesn’t.
+Here’s the JSX:&lt;/p&gt;
+&lt;div class=&quot;post__content-wrapper&quot;&gt;
+&lt;script src=&quot;https://gist.github.com/ndmekala/79f0d253f5749c9251f70a812c378704.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;p&gt;No more holes 🎉&lt;/p&gt;
+&lt;div class=&quot;post__content-wrapper&quot;&gt;
+    &lt;div class=&quot;post__dw-80-mw-100&quot;&gt;
+		&lt;figure class=&quot;post__figure-w-100&quot;&gt;
+			&lt;img class=&quot;post__image-w-100&quot; src=&quot;/assets/images/dtn/dtn-news-list-widget-revised.png&quot; alt=&quot;DTN widget after changes&quot; /&gt;
+			&lt;figcaption&gt;After changes&lt;/figcaption&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;adding-pagination&quot;&gt;Adding Pagination&lt;/h2&gt;
+&lt;p&gt;Another limitation of the current widget is that it doesn’t make full use of all available article data. The data can be broken into pages and pagination controls can be added. This allows viewers to quickly scroll through all available article data, making the widget more dynamic. You can test out how it works at the preview below.&lt;/p&gt;
+&lt;h2 id=&quot;accessing-the-refactored-widget&quot;&gt;Accessing the Refactored Widget&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Find a live preview &lt;a href=&quot;https://dtnnewslistwidget.gatsbyjs.io/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Find the code for the project &lt;a href=&quot;https://github.com/ndmekala/dtn-news-list-widget&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="other" /><summary type="html">Project for DTN Background This is a refactoring of DTN News List Widget (an embeddable widget that lists articles from DTN’s Content Services). You can find the original version here, in the DTN Content Services documentation. I opted to add two levels of functionality. The first solves a problem and the second makes the widget more dynamic. Filling Holes The problem with the widget at present is that the data it pulls from the API doesn’t always include an associated image. This isn’t accounted for in the rendering of the widget, so the appearance of the articles is uneven. There are holes. Before changes I rebuilt this widget and made it a little smarter. It now checks to see if image information exists, and renders a default image if it doesn’t. Here’s the JSX: No more holes 🎉 After changes Adding Pagination Another limitation of the current widget is that it doesn’t make full use of all available article data. The data can be broken into pages and pagination controls can be added. This allows viewers to quickly scroll through all available article data, making the widget more dynamic. You can test out how it works at the preview below. Accessing the Refactored Widget Find a live preview here. Find the code for the project here.</summary></entry><entry><title type="html">Gatsby JS from 10,000 Feet</title><link href="/garden/gatsby-from-10000ft" rel="alternate" type="text/html" title="Gatsby JS from 10,000 Feet" /><published>2021-06-29T00:00:00-05:00</published><updated>2021-06-29T00:00:00-05:00</updated><id>/garden/gatsby-from-10000ft</id><content type="html" xml:base="/garden/gatsby-from-10000ft">&lt;p&gt;These are notes from Zach Gordon’s &lt;a href=&quot;https://www.youtube.com/watch?v=GuvAMcsoreI&quot;&gt;video&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;What?&lt;/strong&gt; Gatsby is a static site generator that runs on your computer with Node.js and generates pre-configured HTML.
