@@ -52,10 +52,15 @@
     <main>
         <article class="post__article container">
             <h1 id="project-for-dtn">Project for DTN</h1>
-<!--[VIDEO]-->
-<!--Hello! My name is Nirmal Mekala. I recently applied to the Front End React Software Engineer position at DTN. I’m really interested in the role. For one, I recognize that DTN supports industries that are vital to human flourishing including energy and agriculture. Being part of an organization that is upholding vital infrastructure by providing high-accuracy data is really appealing to me. -->
-<!--Beyond that, the specifics of the role really piqued my interest. I love front-end toolchain advertised in the position: development with React, semantic HTML, JavaScript and modern CSS. I also am really excited about JAMStack methodology. I’ve created JAMStack sites. I love the toolchains and just the ability to push front-end development to the boundaries of its functionality. I’ve done some back-end with Node and am eager to grow in those skills.-->
-<!-- I believe that I’m able to add value to DTN in this position. But rather than just *saying* that, I thought it might be good to *show* you. Take a look below at a refactoring of one of DTN’s widgets. It will give you a glimpse into my coding abilities and problem solving skills. Thanks for watching, and I hope to hear back from you soon! -->
+<div style="padding:56.25% 0 0 0;position:relative;margin: 1rem 0;"><iframe src="https://player.vimeo.com/video/574041840?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IMG_4814"></iframe></div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<h2 id="accessing-the-refactored-widget">Accessing the Refactored Widget</h2>
+<ul>
+  <li><em>Find a live preview <a href="https://dtnnewslistwidget.gatsbyjs.io/">here</a>.</em></li>
+  <li><em>Find the code for the project <a href="https://github.com/ndmekala/dtn-news-list-widget">here</a>.</em></li>
+</ul>
+
 <h2 id="background">Background</h2>
 <p>This is a refactoring of DTN News List Widget (an embeddable widget that lists articles from DTN’s Content Services). You can find the original version <a href="https://cs-widget-docs.dtn.com/news-list-widget/news-list-widget-1.0-latest.html">here</a>, in the DTN Content Services documentation.
 I opted to add two levels of functionality. The first solves a problem and the second makes the widget more dynamic.</p>
@@ -69,12 +74,12 @@ I opted to add two levels of functionality. The first solves a problem and the s
 		</figure>
 	</div>
 </div>
-<p>I rebuilt this widget and made it a little smarter. It now checks to see if image information exists, and renders a default image if it doesn’t.
+<p>I rebuilt this widget and made it validate image data. It now checks to see if image information exists, and renders a default image if it doesn’t.
 Here’s the JSX:</p>
 <div class="post__content-wrapper">
 <script src="https://gist.github.com/ndmekala/79f0d253f5749c9251f70a812c378704.js"></script>
 </div>
-<p>No more holes 🎉</p>
+<p>No more holes!</p>
 <div class="post__content-wrapper">
     <div class="post__dw-80-mw-100">
 		<figure class="post__figure-w-100">
@@ -84,12 +89,7 @@ Here’s the JSX:</p>
 	</div>
 </div>
 <h2 id="adding-pagination">Adding Pagination</h2>
-<p>Another limitation of the current widget is that it doesn’t make full use of all available article data. The data can be broken into pages and pagination controls can be added. This allows viewers to quickly scroll through all available article data, making the widget more dynamic. You can test out how it works at the preview below.</p>
-<h2 id="accessing-the-refactored-widget">Accessing the Refactored Widget</h2>
-<ul>
-  <li>Find a live preview <a href="https://dtnnewslistwidget.gatsbyjs.io/">here</a>.</li>
-  <li>Find the code for the project <a href="https://github.com/ndmekala/dtn-news-list-widget">here</a>.</li>
-</ul>
+<p>Another limitation of the current widget is that it doesn’t make full use of all available article data. The data can be broken into pages and pagination controls can be added. This allows viewers to quickly scroll through all available article data, making the widget more dynamic. You can test out how it works at the preview above.</p>
 
         </article>
     </main>
