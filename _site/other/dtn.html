@@ -62,8 +62,11 @@
 </ul>
 
 <h2 id="background">Background</h2>
-<p>This is a refactoring of DTN News List Widget (an embeddable widget that lists articles from DTN’s Content Services). You can find the original version <a href="https://cs-widget-docs.dtn.com/news-list-widget/news-list-widget-1.0-latest.html">here</a>, in the DTN Content Services documentation.
-I opted to add two levels of functionality. The first solves a problem and the second makes the widget more dynamic.</p>
+<p>This is a refactoring of DTN News List Widget (an embeddable widget that lists articles from DTN’s Content Services). You can find the original version <a href="https://cs-widget-docs.dtn.com/news-list-widget/news-list-widget-1.0-latest.html">here</a>, in the DTN Content Services documentation.</p>
+
+<p>I opted to add two levels of functionality. The first solves a problem and the second makes the widget more dynamic.</p>
+
+<p>Note that the links in the live preview won’t work. More information is needed to relate the slugs provided by the API to actual article links.</p>
 <h2 id="filling-holes">Filling Holes</h2>
 <p>The problem with the widget at present is that the data it pulls from the API doesn’t always include an associated image. This isn’t accounted for in the rendering of the widget, so the appearance of the articles is uneven. There are holes.</p>
 <div class="post__content-wrapper">
