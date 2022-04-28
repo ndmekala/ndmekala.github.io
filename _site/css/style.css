@@ -258,4 +258,10 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 @media (min-width: 87.5em) { .post__date { margin-bottom: 3rem; } }
 
+.post__blurb-title { margin-top: 0; margin-bottom: 0.125rem; }
+
+.post__blurb-date { margin-bottom: 0.375rem; font-size: 1.0625rem; font-family: 'Inter var', Arial, Helvetica, sans-serif; }
+
+.post__blurb-copy { font-size: 1.0625rem; }
+
 /*# sourceMappingURL=style.css.map */
