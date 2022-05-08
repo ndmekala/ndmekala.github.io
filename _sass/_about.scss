@@ -38,4 +38,11 @@
             margin-bottom: 1.5rem;
         }
     }
+
+    &__centered-button-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 0.75rem;
+    }
 }

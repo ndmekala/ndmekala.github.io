@@ -222,6 +222,8 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 @media (min-width: 40em) { .about__standout { font-size: 2rem; margin-bottom: 1.5rem; } }
 
+.about__centered-button-wrapper { display: flex; width: 100%; justify-content: center; gap: 0.75rem; }
+
 .contact__wrapper { border-radius: 1rem; display: flex; justify-content: center; background-color: #f2f2f2; margin: 0.3125rem; padding: 0; }
 
 .contact__form { padding: 1rem 1.5rem; border: 1px solid #924616; width: 100%; border-radius: 1rem; background-color: #ffffff; max-width: 40rem; }
@@ -258,10 +260,10 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 @media (min-width: 87.5em) { .post__date { margin-bottom: 3rem; } }
 
-.post__blurb-title { margin-top: 0; margin-bottom: 0.125rem; }
+.post__blurb-title { margin-top: 0; margin-bottom: 0.375rem; }
 
-.post__blurb-date { margin-bottom: 0.375rem; font-size: 1.0625rem; font-family: 'Inter var', Arial, Helvetica, sans-serif; }
+.post__blurb-date { margin-bottom: 0rem; font-size: 1.0625rem; font-family: 'Inter var', Arial, Helvetica, sans-serif; }
 
-.post__blurb-copy { font-size: 1.0625rem; }
+.post__blurb-copy { font-size: 1.25rem; }
 
 /*# sourceMappingURL=style.css.map */

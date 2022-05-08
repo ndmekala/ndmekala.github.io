@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Believe in Programming Principles 🧠
-categories: garden
+categories: dev
 ---
 I’ll keep this one short. I believe that there is a distinct value in *thinking* like a programmer that transcends the knowledge of a particular language.
 
