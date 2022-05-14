@@ -1,8 +1,5 @@
 - text: Home
-  url: https://www.meka.la/
-
-- text: Digital Garden
-  url: https://www.meka.la/garden/
+  url: /
 
 - text: Writing
-  url: https://www.meka.la/dev/
+  url: /dev/
