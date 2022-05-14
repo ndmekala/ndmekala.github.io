@@ -1,0 +1,11 @@
+---
+layout: bare-post
+title: Dev Writing
+permalink: /dev/
+---
+<h1>Dev Writing</h1>
+{% for post in site.posts %}
+<p class="post__blurb-date">{{post.date | date_to_long_string}}</p>
+<h2 class="post__blurb-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+<p class="post__blurb-copy">{{ post.content | strip_html | truncatewords: 50 }}</p>
+{% endfor %}

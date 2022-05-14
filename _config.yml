@@ -29,6 +29,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 permalink: ":categories/:title"
+paginate: 5
+paginate_path: "/dev/:num"
 
 # Build settings
 theme: minima

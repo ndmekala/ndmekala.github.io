@@ -18,15 +18,15 @@
 
   gtag('config', 'G-KXHD888YJW');
 </script>
-    <title>What the Garden? 🌿</title>
+    <title>Are Programmers Lazy? 🧐</title>
 </head>
 <body class="post">
     <div class="navigation__overlay">
     <div class="navigation__menu">
         
-        <a href=https://www.meka.la/>Home</a>
+        <a href=/>Home</a>
         
-        <a href=https://www.meka.la/garden/>Digital Garden</a>
+        <a href=/dev/>Writing</a>
         
     </div>
 </div>
@@ -34,9 +34,9 @@
     <nav class="navigation__navbar">
         <div class="navigation__links">
             
-            <a href=https://www.meka.la/>Home</a>
+            <a href=/>Home</a>
             
-            <a href=https://www.meka.la/garden/>Digital Garden</a>
+            <a href=/dev/>Writing</a>
             
         </div>
         <div class="navigation__hamburger">
@@ -44,40 +44,36 @@
             <span></span>
             <span></span>
         </div>
-        <div class="navigation__graphic" onclick="location.href='https://ndmekala.github.io/'">
+        <div class="navigation__graphic" onclick="location.href='/'">
             N
         </div>
     </nav>
 </div>
     <main>
         <article class="post__article container">
-            <h1>What the Garden? 🌿</h1>
-            <p class="post__date"></p>
-            <p>OK, I’ll admit having a “garden” page on your website is a little unorthodox.</p>
+            <h1>Are Programmers Lazy? 🧐</h1>
+            <p class="post__date">23 May 2021</p>
+            <p>Programmers often say they’re lazy. They say this meaning that they would rather invent (or discover) a solution that cuts out grunt work than do the same tasks over and over.</p>
 
-<p>I got the idea from folks like <a href="https://joelhooks.com/digital-garden">Joel Hooks</a> and <a href="https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/">others</a> who are challenging the notion of a traditional blog.</p>
+<p>I think there’s a clearer way to frame it. Good programmers are lazy with respect to <em>grunt</em> work, but marked by diligence when it comes to the <em>mental</em> work of refactoring and eliminating redundancy.</p>
 
-<p>The concept of a digital garden is that it’s a place where your <em>ideas</em> grow. It’s easy to intake endless amounts of random information. It’s harder to actually learn something concrete and then articulate that learned thing. It’s harder still to connect what you’ve learned to a broader repertoire of skill and knowledge.</p>
+<p>That said, there <em>is</em> some wisdom in championing the traditional “programmers are lazy” trope. It incentivizes <em>mental</em> work by highlighting that mental work can save you from <em>grunt</em> work.</p>
 
-<p>Anyone can grow a million dandelions in a grassy lot; it takes <em>intentionality</em> to cultivate a garden.</p>
+<p>So, after all that, I guess I’m refactoring my site’s project section because I’m lazy.</p>
 
-<p>And at the same time, no garden is perfect. Weeds grow incessantly. Any order is ultimately fleeting. And sometimes, you endure the sparse appearance of a particularly small bush, trusting that in time gaps will fill and the whole space will eventually be green and lush. The wise gardener embraces all these aspects as part of the gardening process.</p>
+<p>After updating this section with a few projects, I’ve been struck with how fragile the process of hard-coding each new project in HTML. What if I forget to update one of the links? What if I ruin the section by mixing up the container hierarchy?</p>
 
-<p>So with this digital garden: the goal isn’t perfection. It’s thoughtful cultivation of knowledge toward true cognitive <em>growth</em>.</p>
+<p>I’ve been trying to think of a solution to simply feed data to… something… and have it render each project. I would already know how to do this if my site were using React. I <em>could</em> build this with vanilla JavaScript by iterating over an array of project data and appending each project card to the project section.</p>
 
-<p>Now you know why you’re here. <em>Enjoy your stroll through the garden 🌿.</em> Below you’ll find a curated (not chronological) list of articles (and snippets) I’ve written. I hope this mental exercise of mine provides value for you.</p>
-<h2 id="information-on-specific-technologies">Information on Specific Technologies</h2>
-<ul>
-  <li><a href="https://www.meka.la/garden/graphql-10000ft">GraphQL from 10,000 Feet</a></li>
-  <li><a href="/garden/gatsby-from-10000ft">Gatsby from 10,000 Feet</a></li>
-</ul>
+<p>Or I could be even lazier and look for a pre-built solution in Jekyll. There’s gotta be something, right?</p>
 
-<h2 id="thinking-like-a-programmer">Thinking Like a Programmer</h2>
-<ul>
-  <li><a href="https://www.meka.la/garden/are-programmers-lazy">Are Programmers Lazy? 🧐</a></li>
-  <li><a href="https://www.meka.la/garden/programming-principles-language-skills">I Believe in Programming Principles 🧠</a></li>
-</ul>
+<div style="text-align: center; margin-bottom: 1.5rem;"><img src="https://media.giphy.com/media/3ohzAaRJ1e5SvhIWWY/giphy.gif" /></div>
 
+<p>Yup! <a href="https://jekyllrb.com/docs/datafiles/">This</a> article in the Jekyll documentation shows how to iterate over YAML, JSON, or CSV data files via Liquid. Now I can “avoid copy-pasting large chunks of code in [my] Jekyll [template].” (You read my mind, Jekyll Docs.) After scanning some Liquid documentation I figured out how to sort it, too.</p>
+
+<p>Cheers to (not?) being lazy.🥂</p>
+
+            <p><a href="/dev/">Back to Writing</a></p>
         </article>
     </main>
     <footer class="footer">
