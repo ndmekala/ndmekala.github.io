@@ -45,6 +45,12 @@ h2 {
     font-size: $font-lg;
 }
 
+h3 {
+    margin-top: 0.1875rem;
+    color: $green;
+    font-size: $font-md;
+}
+
 p, ul, li {
     color: $mediumGray;
     font-weight: 400;
@@ -72,13 +78,24 @@ figcaption {
     };
 }
 
+blockquote {
+    font-style: italic;
+}
+
 code {
     font-size: $font-sm;
+    background-color: $lightGray;
+    padding: 3px;
+    border-radius: 9px;
     overflow-wrap: break-word;
     font-family: 'Source Code Pro', 'Courier', monospace;
     font-weight: 400;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     @include breakpoint-up(medium) {
         font-size: $font-md;
+        border-radius: 12px;
+        padding: 5px;
     };
 }
 

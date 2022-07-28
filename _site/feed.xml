@@ -1,4 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-07-13T12:17:00-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">I Believe in Programming Principles 🧠</title><link href="/dev/programming-principles-language-skills" rel="alternate" type="text/html" title="I Believe in Programming Principles 🧠" /><published>2021-06-13T00:00:00-05:00</published><updated>2021-06-13T00:00:00-05:00</updated><id>/dev/programming-principles-language-skills</id><content type="html" xml:base="/dev/programming-principles-language-skills">&lt;p&gt;I’ll keep this one short. I believe that there is a distinct value in &lt;em&gt;thinking&lt;/em&gt; like a programmer that transcends the knowledge of a particular language.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-07-28T16:03:20-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Taking Your Mac Terminal from Zero to Awesome</title><link href="/dev/mac-terminal-zero-to-awesome" rel="alternate" type="text/html" title="Taking Your Mac Terminal from Zero to Awesome" /><published>2022-07-28T00:00:00-05:00</published><updated>2022-07-28T00:00:00-05:00</updated><id>/dev/mac-terminal-zero-to-awesome</id><content type="html" xml:base="/dev/mac-terminal-zero-to-awesome">&lt;p&gt;I’ve had mixed feelings about the terminal. On one hand, I’m a big fan of controlling a computer using primarily the keyboard. I use apps like Magnet, Things 3, and Alfred with keyboard shortcuts to perform as many actions as I can without taking my hands off the keyboard. On the other hand, the terminal seemed to be intimidating and have a steep learning curve.&lt;/p&gt;
+
+&lt;p&gt;Encountering &lt;a href=&quot;https://www.craftz.dog/&quot;&gt;Takuya Matsumaya&lt;/a&gt; changed that. He’s written and made videos about how he sets up his terminal for development. I realized that how he uses his terminal is &lt;em&gt;easier&lt;/em&gt; than what I had been doing. Yes, when you take your first steps with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt;, you’re interacting with the terminal at its &lt;em&gt;most difficult&lt;/em&gt; not it’s &lt;em&gt;easiest&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Starting out with the raw terminal is like parallel parking a stick shift for your first driving lesson. I want to make your terminal experience more like circling a cul-de-sac in an automatic transmission vehicle.&lt;/p&gt;
+
+&lt;p&gt;What follows is a quick and easy guide to make your terminal experience more seamless and enjoyable (i.e. awesome!) using &lt;strong&gt;Hyper&lt;/strong&gt; on a &lt;strong&gt;Mac&lt;/strong&gt; with &lt;strong&gt;zsh&lt;/strong&gt; (which has been the default shell on Mac since Catalina).&lt;/p&gt;
+
+&lt;p&gt;We are going to install…&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The &lt;a href=&quot;https://github.com/romkatv/powerlevel10k&quot;&gt;Powerlevel10k&lt;/a&gt; theme (with nerd fonts) to provide more useful information on the command line&lt;/li&gt;
+  &lt;li&gt;Two utilities that beef up basic command line functions:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z&lt;/code&gt; for directory jumping&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exa&lt;/code&gt; for better file listing&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;, a free macOS package manager, installed. &lt;em&gt;We’ll use this to efficiently download software.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt; command line interface installed. &lt;em&gt;We’ll use this to clone git repositories.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-1-downloading-hyper&quot;&gt;Step 1: Downloading Hyper&lt;/h2&gt;
+&lt;p&gt;Hyper stood out to me for a few reasons. I read Josh Comeau’s recent &lt;a href=&quot;https://www.joshwcomeau.com/javascript/terminal-for-js-devs/&quot;&gt;article&lt;/a&gt; about it and saw it’s pane splitting capabilities and that it was built with the web technologies I was most familiar. After briefly testing it out, I was sold. My favorite feature is the pane splitting, which is intuitive to use. I also like that I can view developer tools (yes, just like you would on a webpage in Chrome 🤯) and inject CSS to tweak the user interface.&lt;/p&gt;
+
+&lt;p&gt;You can download the Hyper app from the Hyper &lt;a href=&quot;https://hyper.is/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: I would also recommend &lt;a href=&quot;https://iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; as a great terminal option!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;step-2-download-and-install-the-powerlevel-10k-theme&quot;&gt;Step 2: Download and Install the Powerlevel 10k Theme&lt;/h2&gt;
+&lt;p&gt;The default view from the terminal tells you which user you are using and not much else. This is not very useful, but applying a &lt;em&gt;theme&lt;/em&gt; to z shell can change this so that the prompt line gives you information about the path to your current directory and its git status.&lt;/p&gt;
+
+&lt;p&gt;Before doing this, you should install a &lt;a href=&quot;https://www.nerdfonts.com/&quot;&gt;nerd font&lt;/a&gt;. Nerd fonts are fonts patched with special glyphs to enhance the terminal experience. For example, a nerd font will have a UNIX penguin glyph that occupies just a single character width and a git branch glyph among many others.&lt;/p&gt;
+
+&lt;p&gt;To install a nerd font:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Run this homebrew prompt: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;brew tap homebrew/cask-fonts&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Browse &lt;a href=&quot;https://www.nerdfonts.com/font-downloads&quot;&gt;this&lt;/a&gt; page to decide which font you want to use. (I have been using Fira Code.)&lt;/li&gt;
+  &lt;li&gt;Run a homebrew prompt to install a specific font: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;brew install --cask font-[FONTNAME]-nerd-font&lt;/code&gt;. (If you encounter issues, all the fonts are listed &lt;a href=&quot;https://github.com/Homebrew/homebrew-cask-fonts/tree/master/Casks&quot;&gt;here&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontFamily&lt;/code&gt; field of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.hyper.js&lt;/code&gt; file to include the name of your nerd font first.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Install Powerlevel10k and reference it in your runtime configuration file using the following prompts:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;brew install romkatv/powerlevel10k/powerlevel10k&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo &quot;source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme&quot; &amp;gt;&amp;gt;~/.zshrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To get set up, all you need to do is run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exec zsh&lt;/code&gt; to restart Zsh, and type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p10k configure&lt;/code&gt; to set up the theme (if configuration does not start automatically). Note that you can edit the theme at any time by running the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p10k configure&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tip: I like choosing the rainbow, lean, or pure themes because they default to pulling from your terminal’s color scheme. This allows flexible tweaking of your shell theme through your terminal theme—which is a cinch with Hyper.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;step-3-download-and-install-utilities&quot;&gt;Step 3: Download and Install Utilities&lt;/h2&gt;
+&lt;h3 id=&quot;download-and-install-z&quot;&gt;Download and Install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z&lt;/code&gt; is an incredibly useful shell utility. Typically when navigating around the shell you will use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt; command to move very carefully from directory to directory. For those of us who don’t have our system’s file structure memorized this normally means &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt;-ing up and down a single directory at a time.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z&lt;/code&gt; helps this go &lt;em&gt;a lot&lt;/em&gt; more smoothly. It takes a regex parameter and automatically sends you to the directory you most likely mean based on frequency and recency. For example, instead of typing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ~/Repositories/ndm-notes/&lt;/code&gt; to access my personal note repository, I just hit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z nd&lt;/code&gt;, press enter, and I’m there.&lt;/p&gt;
+
+&lt;p&gt;To install it, we need to…&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Download &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; from &lt;a href=&quot;https://github.com/rupa/z/&quot;&gt;this&lt;/a&gt; repository.&lt;/li&gt;
+  &lt;li&gt;Tell our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt; file (the &lt;strong&gt;z&lt;/strong&gt; &lt;strong&gt;sh&lt;/strong&gt;ell &lt;strong&gt;r&lt;/strong&gt;untime &lt;strong&gt;c&lt;/strong&gt;onfiguration file located at ours system’s home directory) where we’ve put &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z.sh&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can download &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; with a single command line prompt. The following script will create a directory in your home folder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.z-jump&lt;/code&gt; (you can make this whatever you like by tweaking the relevant commands) and download &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; to that directory:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir ~/.z-jump &amp;amp;&amp;amp; curl https://raw.githubusercontent.com/rupa/z/master/z.sh &amp;gt; ~/.z-jump/z.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We need to include a line with a path to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt; file. The following command will do that:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo &quot;. ~/.z-jump/z.sh&quot; &amp;gt;&amp;gt; ~/.zshrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that the script is installed, all you need to do is reload your runtime configuration file (by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exec zsh&lt;/code&gt;), and load up the database by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt;-ing around your computer. Following these steps should enable the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z&lt;/code&gt; command and simplify your terminal workflow.&lt;/p&gt;
+
+&lt;h3 id=&quot;download-and-install-exa&quot;&gt;Download and Install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exa&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;The command line &lt;a href=&quot;https://the.exa.website/&quot;&gt;tool&lt;/a&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exa&lt;/code&gt; is a replacement for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; command. It has a ton of awesome features including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;colors 🎉&lt;/li&gt;
+  &lt;li&gt;ability to display git information&lt;/li&gt;
+  &lt;li&gt;ability to display more file information&lt;/li&gt;
+  &lt;li&gt;options to display a file tree&lt;/li&gt;
+  &lt;li&gt;options to ignore particular directories or everything in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file (we’re looking at you, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node_modules&lt;/code&gt; 👀)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Downloading and installing is simple:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;brew install exa&lt;/code&gt;&lt;/p&gt;
+
+&lt;!--## Step 4: Configure `nvim` with `lualine`
+
+*Note: it’s important that you’ve installed nerd fonts in order for Lualine to work properly.*
+
+You can install Neovim with Homebrew:
+
+`brew install neovim`
+
+Now in order to install lualine, we need to first configure `vim-plug`. Do that with the following prompt:
+
+`sh -c &apos;curl -fLo &quot;${XDG_DATA_HOME:-$HOME/.local/share}&quot;/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&apos;
+       
+&lt;&lt;This is the area where I go the most rogue so to speak - I need to either confirm this on another system or put in disclaimers before posting. And that might mean I put a pin in this post… would be a shame though… &gt;&gt;
+
+- Create .config/nvim/init.vim
+- Add ~ THE mystery of line ~
+- Add lualine text in there (vim - plug plus that lil script)
+
+&lt;&lt;&gt;&gt;!!!
+
+Next, create ??!
+
+--&gt;
+
+&lt;h2 id=&quot;step-4-select-themes&quot;&gt;Step 4: Select Themes&lt;/h2&gt;
+&lt;p&gt;Shop around for themes you’d like to use for Hyper. (If you follow my recommendations, you can have your shell theme follow your terminal theme.) I also use Neovim and Lualine, so I only focus on themes available for all of those pieces of software. You can find themes with install instructions on the &lt;a href=&quot;https://hyper.is/themes&quot;&gt;Hyper website&lt;/a&gt;. You can try searching for packages on the &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm website&lt;/a&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;Here are some themes I’ve found that support all three:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/hyper-solarized-dark&quot;&gt;Solarized Dark&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/nord-hyper&quot;&gt;Nord&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/hyper-dracula&quot;&gt;Dracula&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/hyper-everforest&quot;&gt;Everforest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;recap-and-conclusion&quot;&gt;Recap and Conclusion&lt;/h2&gt;
+&lt;p&gt;I’ve tried to make nearly every action step in this performable in the command line. You shouldn’t need to leave the terminal too much to proceed through this instructional and get your terminal up and running.&lt;/p&gt;
+
+&lt;p&gt;The terminal doesn’t have to be intimidating or unappealing to use. There are a lot of utilities that make using it a lot less painful and I’m personally excited to keep using the terminal as much as I can and discover more awesome utilities as I go! Hopefully this little guide will get you started on a journey of terminal usage—or at least make your terminal a little bit more awesome.&lt;/p&gt;</content><author><name></name></author><category term="dev" /><summary type="html">I’ve had mixed feelings about the terminal. On one hand, I’m a big fan of controlling a computer using primarily the keyboard. I use apps like Magnet, Things 3, and Alfred with keyboard shortcuts to perform as many actions as I can without taking my hands off the keyboard. On the other hand, the terminal seemed to be intimidating and have a steep learning curve.</summary></entry><entry><title type="html">I Believe in Programming Principles 🧠</title><link href="/dev/programming-principles-language-skills" rel="alternate" type="text/html" title="I Believe in Programming Principles 🧠" /><published>2021-06-13T00:00:00-05:00</published><updated>2021-06-13T00:00:00-05:00</updated><id>/dev/programming-principles-language-skills</id><content type="html" xml:base="/dev/programming-principles-language-skills">&lt;p&gt;I’ll keep this one short. I believe that there is a distinct value in &lt;em&gt;thinking&lt;/em&gt; like a programmer that transcends the knowledge of a particular language.&lt;/p&gt;
 
 &lt;p&gt;Actually—I don’t just believe that there is. I &lt;em&gt;know&lt;/em&gt; that there is.&lt;/p&gt;
 

@@ -34,6 +34,8 @@ h1 { color: #924616; text-transform: uppercase; letter-spacing: 0.1875rem; font-
 
 h2 { margin-top: 0.1875rem; color: #326754; font-size: 1.5rem; }
 
+h3 { margin-top: 0.1875rem; color: #326754; font-size: 1.0625rem; }
+
 p, ul, li { color: #4d4d4d; font-weight: 400; line-height: 1.4; font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif; font-size: 1.0625rem; margin-top: 0; }
 
 @media (min-width: 40em) { p, ul, li { font-size: 1.5rem; } }
@@ -44,9 +46,11 @@ figcaption { color: #924616; font-weight: 400; font-family: 'Source Serif Pro', 
 
 @media (min-width: 40em) { figcaption { font-size: 1.0625rem; } }
 
-code { font-size: 0.8125rem; overflow-wrap: break-word; font-family: 'Source Code Pro', 'Courier', monospace; font-weight: 400; }
+blockquote { font-style: italic; }
 
-@media (min-width: 40em) { code { font-size: 1.0625rem; } }
+code { font-size: 0.8125rem; background-color: #f2f2f2; padding: 3px; border-radius: 9px; overflow-wrap: break-word; font-family: 'Source Code Pro', 'Courier', monospace; font-weight: 400; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+@media (min-width: 40em) { code { font-size: 1.0625rem; border-radius: 12px; padding: 5px; } }
 
 ::selection { background: #f3c9af; }
 
