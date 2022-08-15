@@ -24,7 +24,7 @@ When I first thought through this problem, I imagined a simple solution: add som
 
 A better solution is to *create your own build VI* (not to be confused with LabVIEW’s built-in `Build` VI) that first allows developers to set the version number with the `Set Build Specification` VI and then, second, runs the built-in `Build` VI. The result will be that the build is initiated *after* the build version is actually changed. The final result will follow the general form of the VI below:
 
-<div style="text-align: center; margin-bottom: 1.5rem;"><img src="https://i.imgur.com/nN9tc9I.jpg"></div>
+<div style="text-align: center; margin-bottom: 1.5rem;"><img style="max-width: 100%" src="https://i.imgur.com/nN9tc9I.jpg"></div>
 
 I’ve implemented this strategy successfully, and the result is more consistent builds across the whole team regardless of how we need to manipulate version numbers when creating the new build. LabVIEW’s default functionality makes it easy to get into bad development habits, but it also contains tools that, if implemented properly, can create a powerful and streamlined build process.
 

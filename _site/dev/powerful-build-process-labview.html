@@ -75,7 +75,7 @@
 
 <p>A better solution is to <em>create your own build VI</em> (not to be confused with LabVIEW’s built-in <code class="language-plaintext highlighter-rouge">Build</code> VI) that first allows developers to set the version number with the <code class="language-plaintext highlighter-rouge">Set Build Specification</code> VI and then, second, runs the built-in <code class="language-plaintext highlighter-rouge">Build</code> VI. The result will be that the build is initiated <em>after</em> the build version is actually changed. The final result will follow the general form of the VI below:</p>
 
-<div style="text-align: center; margin-bottom: 1.5rem;"><img src="https://i.imgur.com/nN9tc9I.jpg" /></div>
+<div style="text-align: center; margin-bottom: 1.5rem;"><img style="max-width: 100%" src="https://i.imgur.com/nN9tc9I.jpg" /></div>
 
 <p>I’ve implemented this strategy successfully, and the result is more consistent builds across the whole team regardless of how we need to manipulate version numbers when creating the new build. LabVIEW’s default functionality makes it easy to get into bad development habits, but it also contains tools that, if implemented properly, can create a powerful and streamlined build process.</p>
 
