@@ -5,7 +5,7 @@ categories: dev
 ---
 I’ve had mixed feelings about the terminal. On one hand, I’m a big fan of controlling a computer using primarily the keyboard. I use apps like Magnet, Things 3, and Alfred with keyboard shortcuts to perform as many actions as I can without taking my hands off the keyboard. On the other hand, the terminal seemed to be intimidating and have a steep learning curve.
 
-Encountering [Takuya Matsumaya](https://www.craftz.dog/) changed that. He’s written and made videos about how he sets up his terminal for development. I realized that how he uses his terminal is *easier* than what I had been doing. Yes, when you take your first steps with `cd` and `ls`, you’re interacting with the terminal at its *most difficult* not it’s *easiest*.
+Encountering [Takuya Matsuyama](https://www.craftz.dog/) changed that. He’s written and made videos about how he sets up his terminal for development. I realized that how he uses his terminal is *easier* than what I had been doing. Yes, when you take your first steps with `cd` and `ls`, you’re interacting with the terminal at its *most difficult* not it’s *easiest*.
 
 Starting out with the raw terminal is like parallel parking a stick shift for your first driving lesson. I want to make your terminal experience more like circling a cul-de-sac in an automatic transmission vehicle.
 
