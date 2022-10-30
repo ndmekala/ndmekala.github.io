@@ -46,7 +46,9 @@ figcaption { color: #924616; font-weight: 400; font-family: 'Source Serif Pro', 
 
 @media (min-width: 40em) { figcaption { font-size: 1.0625rem; } }
 
-blockquote { font-style: italic; }
+blockquote { border-left: 0.25em solid #4d4d4d; margin: 0 0; padding: 16px 40px 0px 40px; background-color: #f2f2f2; }
+
+blockquote p { color: #4d4d4d; }
 
 code { font-size: 0.8125rem; background-color: #f2f2f2; padding: 3px; border-radius: 9px; overflow-wrap: break-word; font-family: 'Source Code Pro', 'Courier', monospace; font-weight: 400; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 

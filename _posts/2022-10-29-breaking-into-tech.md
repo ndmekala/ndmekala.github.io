@@ -32,11 +32,9 @@ Following content creators who explain tech and the tech industry can be helpful
 
 ## Gaining Real World Experience Prior to Your First Real World Job 🤔
 
-> &#42; entry level position &#42;
-
-> &#42; 1-2 years experience required &#42;
-
-> 🤬
+> &#42; entry level position &#42;<br/><br/>
+&#42; 1-2 years experience required &#42;<br/><br/>
+🤬
 
 Because it’s so common for entry level positions to require experience, it’s a good idea to plan how you will gain *some* form of experience you can put on your résumé and talk about in interviews. Here are some ideas in order of increasing complexity/difficulty/effort-intensiveness. (The higher options may be more impressive to prospective employers).
 

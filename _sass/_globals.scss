@@ -79,7 +79,13 @@ figcaption {
 }
 
 blockquote {
-    font-style: italic;
+  border-left: 0.25em solid $mediumGray;
+  margin: 0 0;
+  padding: 16px 40px 0px 40px;
+  & p {
+    color: $mediumGray;
+  }
+  background-color: $lightGray;
 }
 
 code {
