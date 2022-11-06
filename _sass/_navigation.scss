@@ -31,9 +31,9 @@
         width: 3rem;
         height: 3rem;
         border-radius: 1.5rem;
-        padding-left: 1rem;
+        padding-left: 0.9375rem;
         padding-top: 0.625rem;
-        left: calc(50vw - 2rem);
+        left: calc(50vw - 1.5rem);
         bottom: 0.5rem;
 
         @include breakpoint-up(medium) {

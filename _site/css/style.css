@@ -82,7 +82,7 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 
 .navigation__navbar { display: flex; justify-content: flex-end; padding-top: 1.5rem; padding-bottom: 1.5rem; }
 
-.navigation__graphic { display: block; color: #ffffff; background-color: #924616; font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif; font-size: 1.5rem; position: absolute; cursor: pointer; width: 3rem; height: 3rem; border-radius: 1.5rem; padding-left: 1rem; padding-top: 0.625rem; left: calc(50vw - 2rem); bottom: 0.5rem; }
+.navigation__graphic { display: block; color: #ffffff; background-color: #924616; font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif; font-size: 1.5rem; position: absolute; cursor: pointer; width: 3rem; height: 3rem; border-radius: 1.5rem; padding-left: 0.9375rem; padding-top: 0.625rem; left: calc(50vw - 1.5rem); bottom: 0.5rem; }
 
 @media (min-width: 40em) { .navigation__graphic { width: 3.75rem; height: 3.75rem; border-radius: 2rem; font-size: 2.25rem; padding-left: 1.125rem; padding-top: 0.625rem; bottom: 0.25rem; left: 1rem; } }
 
