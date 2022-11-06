@@ -84,6 +84,10 @@ blockquote {
   padding: 16px 40px 0px 40px;
   & p {
     color: $mediumGray;
+
+  }
+  & p:last-child {
+    padding-bottom: 16px;
   }
   background-color: $lightGray;
 }
@@ -115,16 +119,12 @@ code {
 
 a, a:visited, a:hover {
     text-decoration: none;
-    transition: all 200ms ease-in-out;
     outline-color: $mediumGray;
-}
-
-a, a:visited {
     color: $rust;
 }
 
 a:hover {
-    color: $lightRust;
+    text-decoration: underline;
 }
 
 button {
@@ -137,7 +137,6 @@ button {
     background-color: $green;
     color: $lightGray;
     border-radius: 1.375rem;
-    transition: all 200ms ease-in-out;
     cursor: pointer;
     
     &:hover {

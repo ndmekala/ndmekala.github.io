@@ -50,6 +50,8 @@ blockquote { border-left: 0.25em solid #4d4d4d; margin: 0 0; padding: 16px 40px 
 
 blockquote p { color: #4d4d4d; }
 
+blockquote p:last-child { padding-bottom: 16px; }
+
 code { font-size: 0.8125rem; background-color: #f2f2f2; padding: 3px; border-radius: 9px; overflow-wrap: break-word; font-family: 'Source Code Pro', 'Courier', monospace; font-weight: 400; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 
 @media (min-width: 40em) { code { font-size: 1.0625rem; border-radius: 12px; padding: 5px; } }
@@ -58,13 +60,11 @@ code { font-size: 0.8125rem; background-color: #f2f2f2; padding: 3px; border-rad
 
 ::moz-selection { background: #f3c9af; }
 
-a, a:visited, a:hover { text-decoration: none; transition: all 200ms ease-in-out; outline-color: #4d4d4d; }
+a, a:visited, a:hover { text-decoration: none; outline-color: #4d4d4d; color: #924616; }
 
-a, a:visited { color: #924616; }
+a:hover { text-decoration: underline; }
 
-a:hover { color: #f3c9af; }
-
-button { padding: 0.875rem; text-transform: uppercase; font-family: 'Inter var', Arial, Helvetica, sans-serif; font-size: 0.8125rem; letter-spacing: 0.125rem; border-style: none; background-color: #326754; color: #f2f2f2; border-radius: 1.375rem; transition: all 200ms ease-in-out; cursor: pointer; }
+button { padding: 0.875rem; text-transform: uppercase; font-family: 'Inter var', Arial, Helvetica, sans-serif; font-size: 0.8125rem; letter-spacing: 0.125rem; border-style: none; background-color: #326754; color: #f2f2f2; border-radius: 1.375rem; cursor: pointer; }
 
 button:hover { background-color: #98cdba; color: #4d4d4d; }
 
@@ -103,8 +103,6 @@ input[type=text], [type=email] { width: 100%; background-color: #ffffff; margin-
 .navigation__links a, .navigation__links a:visited { text-transform: uppercase; letter-spacing: .125rem; font-size: 0.8125rem; color: #924616; }
 
 .navigation__links a:not(:last-child), .navigation__links a:visited:not(:last-child) { margin-right: 1.5rem; }
-
-.navigation__links a:hover { color: #f3c9af; }
 
 @media (min-width: 40em) { .navigation__links { display: inline-block; margin-right: 1rem; } }
 
