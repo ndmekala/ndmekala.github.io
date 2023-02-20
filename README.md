@@ -1,2 +1,2 @@
 # Personal Site
-Welcome to the repository of my [personal site](https://www.meka.la).
+Welcome to the repository of my [personal site](https://nirmal.meka.la).
